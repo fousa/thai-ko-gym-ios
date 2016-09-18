@@ -12,10 +12,21 @@
 		626295441D8EC0CA00A57D08 /* Flow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626295431D8EC0CA00A57D08 /* Flow.storyboard */; };
 		626295461D8EC10B00A57D08 /* FlowNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626295451D8EC10B00A57D08 /* FlowNavigationViewController.swift */; };
 		626295491D8EC33F00A57D08 /* FlowNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626295481D8EC33F00A57D08 /* FlowNavigationViewModel.swift */; };
+		626295511D8EC45800A57D08 /* FlowNavigationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626295501D8EC45800A57D08 /* FlowNavigationViewModelTests.swift */; };
 		62F99F621D8DF26400273BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F99F611D8DF26400273BA3 /* AppDelegate.swift */; };
 		62F99F691D8DF26400273BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F99F681D8DF26400273BA3 /* Assets.xcassets */; };
 		62F99F6C1D8DF26400273BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F99F6A1D8DF26400273BA3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		626295531D8EC45800A57D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62F99F561D8DF26400273BA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62F99F5D1D8DF26400273BA3;
+			remoteInfo = "Thai Ko Gym";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6262953F1D8EC0A900A57D08 /* Members.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Members.storyboard; sourceTree = "<group>"; };
@@ -23,6 +34,9 @@
 		626295431D8EC0CA00A57D08 /* Flow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Flow.storyboard; sourceTree = "<group>"; };
 		626295451D8EC10B00A57D08 /* FlowNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowNavigationViewController.swift; sourceTree = "<group>"; };
 		626295481D8EC33F00A57D08 /* FlowNavigationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowNavigationViewModel.swift; sourceTree = "<group>"; };
+		6262954E1D8EC45800A57D08 /* Thai Ko Gym Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Thai Ko Gym Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		626295501D8EC45800A57D08 /* FlowNavigationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowNavigationViewModelTests.swift; sourceTree = "<group>"; };
+		626295521D8EC45800A57D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62F99F5E1D8DF26400273BA3 /* Thai Ko Gym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thai Ko Gym.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F99F611D8DF26400273BA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62F99F681D8DF26400273BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6262954B1D8EC45800A57D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62F99F5B1D8DF26400273BA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,11 +98,37 @@
 			path = "Navigation Flow";
 			sourceTree = "<group>";
 		};
+		6262954F1D8EC45800A57D08 /* Thai Ko Gym Tests */ = {
+			isa = PBXGroup;
+			children = (
+				626295581D8EC46000A57D08 /* Supporting Files */,
+				626295591D8EC47500A57D08 /* Tests */,
+			);
+			path = "Thai Ko Gym Tests";
+			sourceTree = "<group>";
+		};
+		626295581D8EC46000A57D08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				626295521D8EC45800A57D08 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		626295591D8EC47500A57D08 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				626295501D8EC45800A57D08 /* FlowNavigationViewModelTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		62F99F551D8DF26400273BA3 = {
 			isa = PBXGroup;
 			children = (
 				62F99F5F1D8DF26400273BA3 /* Products */,
 				62F99F601D8DF26400273BA3 /* Thai Ko Gym */,
+				6262954F1D8EC45800A57D08 /* Thai Ko Gym Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				62F99F5E1D8DF26400273BA3 /* Thai Ko Gym.app */,
+				6262954E1D8EC45800A57D08 /* Thai Ko Gym Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +172,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6262954D1D8EC45800A57D08 /* Thai Ko Gym Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 626295571D8EC45800A57D08 /* Build configuration list for PBXNativeTarget "Thai Ko Gym Tests" */;
+			buildPhases = (
+				6262954A1D8EC45800A57D08 /* Sources */,
+				6262954B1D8EC45800A57D08 /* Frameworks */,
+				6262954C1D8EC45800A57D08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				626295541D8EC45800A57D08 /* PBXTargetDependency */,
+			);
+			name = "Thai Ko Gym Tests";
+			productName = "Thai Ko Gym Tests";
+			productReference = 6262954E1D8EC45800A57D08 /* Thai Ko Gym Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		62F99F5D1D8DF26400273BA3 /* Thai Ko Gym */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62F99F701D8DF26400273BA3 /* Build configuration list for PBXNativeTarget "Thai Ko Gym" */;
@@ -151,6 +217,12 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Fousa;
 				TargetAttributes = {
+					6262954D1D8EC45800A57D08 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 743AM63YFU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 62F99F5D1D8DF26400273BA3;
+					};
 					62F99F5D1D8DF26400273BA3 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 743AM63YFU;
@@ -172,11 +244,19 @@
 			projectRoot = "";
 			targets = (
 				62F99F5D1D8DF26400273BA3 /* Thai Ko Gym */,
+				6262954D1D8EC45800A57D08 /* Thai Ko Gym Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6262954C1D8EC45800A57D08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62F99F5C1D8DF26400273BA3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,6 +272,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6262954A1D8EC45800A57D08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				626295511D8EC45800A57D08 /* FlowNavigationViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62F99F5A1D8DF26400273BA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,6 +291,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		626295541D8EC45800A57D08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62F99F5D1D8DF26400273BA3 /* Thai Ko Gym */;
+			targetProxy = 626295531D8EC45800A57D08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		62F99F6A1D8DF26400273BA3 /* LaunchScreen.storyboard */ = {
@@ -217,6 +313,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		626295551D8EC45800A57D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 743AM63YFU;
+				INFOPLIST_FILE = "Thai Ko Gym Tests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "be.fousa.Thai-Ko-Gym-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thai Ko Gym.app/Thai Ko Gym";
+			};
+			name = Debug;
+		};
+		626295561D8EC45800A57D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 743AM63YFU;
+				INFOPLIST_FILE = "Thai Ko Gym Tests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "be.fousa.Thai-Ko-Gym-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thai Ko Gym.app/Thai Ko Gym";
+			};
+			name = Release;
+		};
 		62F99F6E1D8DF26400273BA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -343,6 +467,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		626295571D8EC45800A57D08 /* Build configuration list for PBXNativeTarget "Thai Ko Gym Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				626295551D8EC45800A57D08 /* Debug */,
+				626295561D8EC45800A57D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		62F99F591D8DF26400273BA3 /* Build configuration list for PBXProject "Thai Ko Gym" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
