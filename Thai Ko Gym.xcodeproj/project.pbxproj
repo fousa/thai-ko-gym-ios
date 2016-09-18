@@ -13,6 +13,7 @@
 		626295461D8EC10B00A57D08 /* FlowNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626295451D8EC10B00A57D08 /* FlowNavigationViewController.swift */; };
 		626295491D8EC33F00A57D08 /* FlowNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626295481D8EC33F00A57D08 /* FlowNavigationViewModel.swift */; };
 		626295511D8EC45800A57D08 /* FlowNavigationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626295501D8EC45800A57D08 /* FlowNavigationViewModelTests.swift */; };
+		6262955B1D8EC5EF00A57D08 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262955A1D8EC5EF00A57D08 /* KeyboardLayoutConstraint.swift */; };
 		62F99F621D8DF26400273BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F99F611D8DF26400273BA3 /* AppDelegate.swift */; };
 		62F99F691D8DF26400273BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F99F681D8DF26400273BA3 /* Assets.xcassets */; };
 		62F99F6C1D8DF26400273BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F99F6A1D8DF26400273BA3 /* LaunchScreen.storyboard */; };
@@ -37,6 +38,7 @@
 		6262954E1D8EC45800A57D08 /* Thai Ko Gym Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Thai Ko Gym Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		626295501D8EC45800A57D08 /* FlowNavigationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowNavigationViewModelTests.swift; sourceTree = "<group>"; };
 		626295521D8EC45800A57D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6262955A1D8EC5EF00A57D08 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		62F99F5E1D8DF26400273BA3 /* Thai Ko Gym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thai Ko Gym.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F99F611D8DF26400273BA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62F99F681D8DF26400273BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,6 +125,22 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		6262955C1D8ED24800A57D08 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6262955D1D8ED25000A57D08 /* Layout */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6262955D1D8ED25000A57D08 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				6262955A1D8EC5EF00A57D08 /* KeyboardLayoutConstraint.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
 		62F99F551D8DF26400273BA3 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +162,7 @@
 		62F99F601D8DF26400273BA3 /* Thai Ko Gym */ = {
 			isa = PBXGroup;
 			children = (
+				6262955C1D8ED24800A57D08 /* Components */,
 				6262953C1D8EB57600A57D08 /* Modules */,
 				62F99F731D8DF2A400273BA3 /* Supporting Files */,
 				62F99F741D8DF2AA00273BA3 /* UI */,
@@ -285,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				626295491D8EC33F00A57D08 /* FlowNavigationViewModel.swift in Sources */,
+				6262955B1D8EC5EF00A57D08 /* KeyboardLayoutConstraint.swift in Sources */,
 				626295461D8EC10B00A57D08 /* FlowNavigationViewController.swift in Sources */,
 				62F99F621D8DF26400273BA3 /* AppDelegate.swift in Sources */,
 			);

@@ -11,7 +11,7 @@ class FlowNavigationViewModel {
     // MARK: - Authentication
     
     var authenticated: Bool {
-        return true
+        return false
     }
     
 }
