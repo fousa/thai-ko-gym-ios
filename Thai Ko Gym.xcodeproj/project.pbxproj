@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		626295401D8EC0A900A57D08 /* Members.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6262953F1D8EC0A900A57D08 /* Members.storyboard */; };
+		626295421D8EC0B300A57D08 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626295411D8EC0B300A57D08 /* Login.storyboard */; };
+		626295441D8EC0CA00A57D08 /* Flow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626295431D8EC0CA00A57D08 /* Flow.storyboard */; };
+		626295461D8EC10B00A57D08 /* FlowNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626295451D8EC10B00A57D08 /* FlowNavigationViewController.swift */; };
+		626295491D8EC33F00A57D08 /* FlowNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626295481D8EC33F00A57D08 /* FlowNavigationViewModel.swift */; };
 		62F99F621D8DF26400273BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F99F611D8DF26400273BA3 /* AppDelegate.swift */; };
 		62F99F691D8DF26400273BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F99F681D8DF26400273BA3 /* Assets.xcassets */; };
 		62F99F6C1D8DF26400273BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F99F6A1D8DF26400273BA3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6262953F1D8EC0A900A57D08 /* Members.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Members.storyboard; sourceTree = "<group>"; };
+		626295411D8EC0B300A57D08 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		626295431D8EC0CA00A57D08 /* Flow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Flow.storyboard; sourceTree = "<group>"; };
+		626295451D8EC10B00A57D08 /* FlowNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowNavigationViewController.swift; sourceTree = "<group>"; };
+		626295481D8EC33F00A57D08 /* FlowNavigationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowNavigationViewModel.swift; sourceTree = "<group>"; };
 		62F99F5E1D8DF26400273BA3 /* Thai Ko Gym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thai Ko Gym.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F99F611D8DF26400273BA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62F99F681D8DF26400273BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +41,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6262953C1D8EB57600A57D08 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6262953D1D8EB57B00A57D08 /* Login */,
+				6262953E1D8EB58000A57D08 /* Members */,
+				626295471D8EC31900A57D08 /* Navigation Flow */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6262953D1D8EB57B00A57D08 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				626295411D8EC0B300A57D08 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6262953E1D8EB58000A57D08 /* Members */ = {
+			isa = PBXGroup;
+			children = (
+				6262953F1D8EC0A900A57D08 /* Members.storyboard */,
+			);
+			path = Members;
+			sourceTree = "<group>";
+		};
+		626295471D8EC31900A57D08 /* Navigation Flow */ = {
+			isa = PBXGroup;
+			children = (
+				626295431D8EC0CA00A57D08 /* Flow.storyboard */,
+				626295451D8EC10B00A57D08 /* FlowNavigationViewController.swift */,
+				626295481D8EC33F00A57D08 /* FlowNavigationViewModel.swift */,
+			);
+			path = "Navigation Flow";
+			sourceTree = "<group>";
+		};
 		62F99F551D8DF26400273BA3 = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +96,7 @@
 		62F99F601D8DF26400273BA3 /* Thai Ko Gym */ = {
 			isa = PBXGroup;
 			children = (
+				6262953C1D8EB57600A57D08 /* Modules */,
 				62F99F731D8DF2A400273BA3 /* Supporting Files */,
 				62F99F741D8DF2AA00273BA3 /* UI */,
 				62F99F611D8DF26400273BA3 /* AppDelegate.swift */,
@@ -134,8 +181,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626295421D8EC0B300A57D08 /* Login.storyboard in Resources */,
 				62F99F6C1D8DF26400273BA3 /* LaunchScreen.storyboard in Resources */,
+				626295401D8EC0A900A57D08 /* Members.storyboard in Resources */,
 				62F99F691D8DF26400273BA3 /* Assets.xcassets in Resources */,
+				626295441D8EC0CA00A57D08 /* Flow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +196,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626295491D8EC33F00A57D08 /* FlowNavigationViewModel.swift in Sources */,
+				626295461D8EC10B00A57D08 /* FlowNavigationViewController.swift in Sources */,
 				62F99F621D8DF26400273BA3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
