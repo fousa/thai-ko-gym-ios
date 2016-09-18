@@ -26,7 +26,7 @@ class KeyboardLayoutConstraint: NSLayoutConstraint {
         
         initialConstant = constant
         
-        print("👔 Observe the keyboard appearance")
+        print("👔", "Observe the keyboard appearance")
         keyboardWillShowObserver = NotificationCenter.default.addObserver(forName: .UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { notification in
             self.handleKeyboardAppearance(presenting: true, userInfo: notification.userInfo)
         }
@@ -43,11 +43,11 @@ class KeyboardLayoutConstraint: NSLayoutConstraint {
     // MARK: - Update constraint
     
     private func handleKeyboardAppearance(presenting: Bool, userInfo: [AnyHashable: Any]?) {
-        print("🐜 Handle keyboard appearance", presenting)
+        print("🐜", "Handle keyboard appearance", presenting)
         
         let duration = (userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue
         guard let bounds = (userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
-            print("💀 Keyboard bounds not found")
+            print("💀", "Keyboard bounds not found")
             return
         }
         
