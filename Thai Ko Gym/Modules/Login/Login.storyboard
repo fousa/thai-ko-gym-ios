@@ -7,23 +7,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="dTN-mm-4gs">
             <objects>
-                <viewController id="Zsa-WE-2ES" sceneMemberID="viewController">
+                <viewController id="Zsa-WE-2ES" customClass="LoginViewController" customModule="Thai_Ko_Gym" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="02u-Og-4Qu"/>
                         <viewControllerLayoutGuide type="bottom" id="VwT-Ae-icQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cxo-TL-aEx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMe-xH-jLW">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIj-Xk-WTm">
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6PK-KJ-eb7">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6PK-KJ-eb7">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="240" id="2TD-5A-jUY"/>
                                                 </constraints>
@@ -31,7 +31,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WAP-FS-ywM">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WAP-FS-ywM">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="240" id="NsE-b1-3MF"/>
                                                 </constraints>
@@ -51,11 +51,19 @@
                                             <constraint firstItem="WAP-FS-ywM" firstAttribute="leading" secondItem="MIj-Xk-WTm" secondAttribute="leading" id="vMK-oK-3L1"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vl3-kn-n3n">
+                                        <state key="normal" title="authenticate"/>
+                                        <connections>
+                                            <action selector="authenticateWithSender:" destination="Zsa-WE-2ES" eventType="touchUpInside" id="B95-MQ-FdD"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="vl3-kn-n3n" firstAttribute="top" secondItem="MIj-Xk-WTm" secondAttribute="bottom" constant="8" id="JXV-9T-fCG"/>
                                     <constraint firstItem="MIj-Xk-WTm" firstAttribute="centerY" secondItem="TMe-xH-jLW" secondAttribute="centerY" id="TGM-gz-dd2"/>
                                     <constraint firstItem="MIj-Xk-WTm" firstAttribute="centerX" secondItem="TMe-xH-jLW" secondAttribute="centerX" id="aTR-ai-Xxx"/>
+                                    <constraint firstItem="vl3-kn-n3n" firstAttribute="centerX" secondItem="TMe-xH-jLW" secondAttribute="centerX" id="ywq-4I-wAV"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -67,6 +75,10 @@
                             <constraint firstItem="TMe-xH-jLW" firstAttribute="leading" secondItem="Cxo-TL-aEx" secondAttribute="leadingMargin" id="yXC-7n-OFM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="6PK-KJ-eb7" id="Q4A-94-x8y"/>
+                        <outlet property="passwordField" destination="WAP-FS-ywM" id="RPS-KC-o9e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5XY-7P-RBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -22,6 +22,12 @@ class FlowNavigationViewController: UINavigationController {
         determineRootViewController()
     }
     
+    // MARK: - Handle navigation
+    
+    func pushToMembersViewController() {
+        pushViewController(membersViewController, animated: true)
+    }
+    
     // MARK: - Root View Controller
     
     private func determineRootViewController() {
