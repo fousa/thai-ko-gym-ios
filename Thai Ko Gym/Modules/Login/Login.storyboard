@@ -3,33 +3,82 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="dTN-mm-4gs">
             <objects>
-                <viewController id="Zsa-WE-2ES" sceneMemberID="viewController">
+                <viewController id="Zsa-WE-2ES" customClass="LoginViewController" customModule="Thai_Ko_Gym" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="02u-Og-4Qu"/>
                         <viewControllerLayoutGuide type="bottom" id="VwT-Ae-icQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cxo-TL-aEx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQD-2s-rDa">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMe-xH-jLW">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIj-Xk-WTm">
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6PK-KJ-eb7">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="2TD-5A-jUY"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WAP-FS-ywM">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="NsE-b1-3MF"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="WAP-FS-ywM" secondAttribute="bottom" id="0Vn-63-DmF"/>
+                                            <constraint firstItem="6PK-KJ-eb7" firstAttribute="leading" secondItem="MIj-Xk-WTm" secondAttribute="leading" id="15T-RE-YZ0"/>
+                                            <constraint firstItem="WAP-FS-ywM" firstAttribute="top" secondItem="6PK-KJ-eb7" secondAttribute="bottom" constant="10" id="Rp8-tj-SUp"/>
+                                            <constraint firstAttribute="trailing" secondItem="6PK-KJ-eb7" secondAttribute="trailing" id="VkA-Lq-4a9"/>
+                                            <constraint firstAttribute="trailing" secondItem="WAP-FS-ywM" secondAttribute="trailing" id="c3D-oC-P1O"/>
+                                            <constraint firstItem="6PK-KJ-eb7" firstAttribute="top" secondItem="MIj-Xk-WTm" secondAttribute="top" id="ln5-pA-Rbe"/>
+                                            <constraint firstItem="WAP-FS-ywM" firstAttribute="leading" secondItem="MIj-Xk-WTm" secondAttribute="leading" id="vMK-oK-3L1"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vl3-kn-n3n">
+                                        <state key="normal" title="authenticate"/>
+                                        <connections>
+                                            <action selector="authenticateWithSender:" destination="Zsa-WE-2ES" eventType="touchUpInside" id="B95-MQ-FdD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="vl3-kn-n3n" firstAttribute="top" secondItem="MIj-Xk-WTm" secondAttribute="bottom" constant="8" id="JXV-9T-fCG"/>
+                                    <constraint firstItem="MIj-Xk-WTm" firstAttribute="centerY" secondItem="TMe-xH-jLW" secondAttribute="centerY" id="TGM-gz-dd2"/>
+                                    <constraint firstItem="MIj-Xk-WTm" firstAttribute="centerX" secondItem="TMe-xH-jLW" secondAttribute="centerX" id="aTR-ai-Xxx"/>
+                                    <constraint firstItem="vl3-kn-n3n" firstAttribute="centerX" secondItem="TMe-xH-jLW" secondAttribute="centerX" id="ywq-4I-wAV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tQD-2s-rDa" firstAttribute="centerX" secondItem="Cxo-TL-aEx" secondAttribute="centerX" id="N7R-TX-iWV"/>
-                            <constraint firstItem="tQD-2s-rDa" firstAttribute="centerY" secondItem="Cxo-TL-aEx" secondAttribute="centerY" id="fx6-dK-onn"/>
+                            <constraint firstItem="TMe-xH-jLW" firstAttribute="top" secondItem="02u-Og-4Qu" secondAttribute="bottom" id="1cm-OE-q4l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TMe-xH-jLW" secondAttribute="trailing" id="5Us-0p-pAq"/>
+                            <constraint firstItem="VwT-Ae-icQ" firstAttribute="top" secondItem="TMe-xH-jLW" secondAttribute="bottom" id="p21-FC-sHK" customClass="KeyboardLayoutConstraint" customModule="Thai_Ko_Gym" customModuleProvider="target"/>
+                            <constraint firstItem="TMe-xH-jLW" firstAttribute="leading" secondItem="Cxo-TL-aEx" secondAttribute="leadingMargin" id="yXC-7n-OFM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="6PK-KJ-eb7" id="Q4A-94-x8y"/>
+                        <outlet property="passwordField" destination="WAP-FS-ywM" id="RPS-KC-o9e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5XY-7P-RBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

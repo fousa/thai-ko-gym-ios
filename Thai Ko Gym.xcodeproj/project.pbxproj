@@ -13,8 +13,12 @@
 		B1983C59AA817DE7BABA8A64BB1D8844 /* FlowNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB14AC02C104316DB2115A42007BD804 /* FlowNavigationViewController.swift */; };
 		77CF1BE00774BB7DD09008C3F04F57AA /* FlowNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34579282FBDF123B7B3185B2D3DB5179 /* FlowNavigationViewModel.swift */; };
 		7911A21AD51B43E542E0822C769B2D21 /* FlowNavigationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C292130F3AA293184C50007E5A52FFD /* FlowNavigationViewModelTests.swift */; };
+		EAF340714A654F3984E3C99E60671A5A /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4A61287970E1B2ECF412516AA9862C /* KeyboardLayoutConstraint.swift */; };
 		D9A064C516A06DF6D807B0BE18474ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8BA38A1392A2A8148BF13DBAF14175 /* LaunchScreen.storyboard */; };
 		9B1DFFBAE3CFF6186A96948FDDA6D37B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD5DEDB6C107893F4330BD225424AF4 /* Login.storyboard */; };
+		6F617CFA796153C996645450AB707551 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8D3FDE44D05A8C8402A1DFC0B009A /* LoginViewController.swift */; };
+		D3EAC6E908CED99272FAF4FA7E866930 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733177493DB5B7CBEBE0867FC0655EC0 /* LoginViewModel.swift */; };
+		C3F3AA0B83EE00218B41FAAADD3B8AB1 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA09BE721016B780A706456AE25E3A3 /* LoginViewModelTests.swift */; };
 		80F27503C90F7A021DED75D8022B1110 /* Members.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FE66422A0CB762B9DAECD8511D1F43 /* Members.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +44,11 @@
 		3C292130F3AA293184C50007E5A52FFD /* FlowNavigationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowNavigationViewModelTests.swift; sourceTree = "<group>"; };
 		13A20B9CC17389C81EAE492CB6050702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9170A7F1E62C2F4B4A41C5BE69A9560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A4A61287970E1B2ECF412516AA9862C /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		1FD5DEDB6C107893F4330BD225424AF4 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		92A8D3FDE44D05A8C8402A1DFC0B009A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		733177493DB5B7CBEBE0867FC0655EC0 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EFA09BE721016B780A706456AE25E3A3 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		71FE66422A0CB762B9DAECD8511D1F43 /* Members.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Members.storyboard; sourceTree = "<group>"; };
 		DFFF5E3806EFD18C0BA3911B74A177E0 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		F161EBEE9032FCFD33103C813E92CF4F /* Thai Ko Gym Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Thai Ko Gym Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				3C292130F3AA293184C50007E5A52FFD /* FlowNavigationViewModelTests.swift */,
+				EFA09BE721016B780A706456AE25E3A3 /* LoginViewModelTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -76,30 +85,13 @@
 		046211EEB3845BA19886125BAB3603CA /* Thai Ko Gym */ = {
 			isa = PBXGroup;
 			children = (
+				2904AC0B662208041AB6BA3B80E17A8C /* Components */,
 				2C3E1BDDD82CC2C0549C375288273DDE /* Modules */,
 				59D92D8678F5FFAA2DD84B163E94D1F8 /* Supporting Files */,
 				93CF1EE55FC8C794A1421187BF822873 /* UI */,
 				0E341AF4AFD40E98B3DE640D4D55EE51 /* AppDelegate.swift */,
 			);
 			path = "Thai Ko Gym";
-			sourceTree = "<group>";
-		};
-		113DF980EE44A0095C692221035F8E1C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F9170A7F1E62C2F4B4A41C5BE69A9560 /* Info.plist */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2C3E1BDDD82CC2C0549C375288273DDE /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				AF62272AB754945F8572C26837845E80 /* Login */,
-				A5BDBCC8A146D50FF18C8C5A623D45ED /* Members */,
-				52416A600EC32790421BA9545E1EF7DC /* Navigation Flow */,
-			);
-			path = Modules;
 			sourceTree = "<group>";
 		};
 		4DAB5C0FADA8253A948F6F22D276F5D7 /* Configuration */ = {
@@ -110,6 +102,40 @@
 				DFFF5E3806EFD18C0BA3911B74A177E0 /* Staging.xcconfig */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		113DF980EE44A0095C692221035F8E1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9170A7F1E62C2F4B4A41C5BE69A9560 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2904AC0B662208041AB6BA3B80E17A8C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2B9F16643D72B385A2F35BB8CC750D43 /* Layout */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2B9F16643D72B385A2F35BB8CC750D43 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				1A4A61287970E1B2ECF412516AA9862C /* KeyboardLayoutConstraint.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		2C3E1BDDD82CC2C0549C375288273DDE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AF62272AB754945F8572C26837845E80 /* Login */,
+				A5BDBCC8A146D50FF18C8C5A623D45ED /* Members */,
+				52416A600EC32790421BA9545E1EF7DC /* Navigation Flow */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		52416A600EC32790421BA9545E1EF7DC /* Navigation Flow */ = {
@@ -170,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				1FD5DEDB6C107893F4330BD225424AF4 /* Login.storyboard */,
+				92A8D3FDE44D05A8C8402A1DFC0B009A /* LoginViewController.swift */,
+				733177493DB5B7CBEBE0867FC0655EC0 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -291,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7911A21AD51B43E542E0822C769B2D21 /* FlowNavigationViewModelTests.swift in Sources */,
+				C3F3AA0B83EE00218B41FAAADD3B8AB1 /* LoginViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +330,9 @@
 				393E8A7EA450C5AE33F0ED4699018F9C /* AppDelegate.swift in Sources */,
 				B1983C59AA817DE7BABA8A64BB1D8844 /* FlowNavigationViewController.swift in Sources */,
 				77CF1BE00774BB7DD09008C3F04F57AA /* FlowNavigationViewModel.swift in Sources */,
+				EAF340714A654F3984E3C99E60671A5A /* KeyboardLayoutConstraint.swift in Sources */,
+				6F617CFA796153C996645450AB707551 /* LoginViewController.swift in Sources */,
+				D3EAC6E908CED99272FAF4FA7E866930 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,23 +359,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0468A2CCF1A570A9A6755793526B0647 /* Staging */ = {
+		450903599BC040CB8B971213AADB68E4 /* App Store */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 743AM63YFU;
-				INFOPLIST_FILE = "Thai Ko Gym/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Staging;
-		};
-		0B8D50B0B331AC36BB13601CBAA97EA5 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFFF5E3806EFD18C0BA3911B74A177E0 /* Staging.xcconfig */;
+			baseConfigurationReference = 94E0B852771D23476E858616A1B6C8B1 /* App Store.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -383,7 +401,34 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Staging;
+			name = "App Store";
+		};
+		EDD51E20D4E7866880F7ECB6DC210361 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 743AM63YFU;
+				INFOPLIST_FILE = "Thai Ko Gym/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "App Store";
+		};
+		3060D022B70202E31D4A040B945FA9CA /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 743AM63YFU;
+				INFOPLIST_FILE = "Thai Ko Gym Tests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thai Ko Gym.app/Thai Ko Gym";
+			};
+			name = "App Store";
 		};
 		1EC36F036560158C3128F89DC629B165 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -436,7 +481,21 @@
 			};
 			name = Debug;
 		};
-		3060D022B70202E31D4A040B945FA9CA /* App Store */ = {
+		BA909CF594E17516955FEBF5625D1F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 743AM63YFU;
+				INFOPLIST_FILE = "Thai Ko Gym/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		53DF6334E4DE4C25822BFD29D50D1D39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -447,11 +506,24 @@
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thai Ko Gym.app/Thai Ko Gym";
 			};
-			name = "App Store";
+			name = Debug;
 		};
-		450903599BC040CB8B971213AADB68E4 /* App Store */ = {
+		DF35D08F1521DB2E9D696CCE4F70B17F /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94E0B852771D23476E858616A1B6C8B1 /* App Store.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 743AM63YFU;
+				INFOPLIST_FILE = "Thai Ko Gym Tests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thai Ko Gym.app/Thai Ko Gym";
+			};
+			name = Staging;
+		};
+		0B8D50B0B331AC36BB13601CBAA97EA5 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFFF5E3806EFD18C0BA3911B74A177E0 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -491,49 +563,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = "App Store";
-		};
-		53DF6334E4DE4C25822BFD29D50D1D39 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 743AM63YFU;
-				INFOPLIST_FILE = "Thai Ko Gym Tests/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thai Ko Gym.app/Thai Ko Gym";
-			};
-			name = Debug;
-		};
-		BA909CF594E17516955FEBF5625D1F81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 743AM63YFU;
-				INFOPLIST_FILE = "Thai Ko Gym/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		DF35D08F1521DB2E9D696CCE4F70B17F /* Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 743AM63YFU;
-				INFOPLIST_FILE = "Thai Ko Gym Tests/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thai Ko Gym.app/Thai Ko Gym";
-			};
 			name = Staging;
 		};
-		EDD51E20D4E7866880F7ECB6DC210361 /* App Store */ = {
+		0468A2CCF1A570A9A6755793526B0647 /* Staging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -545,21 +577,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
-			name = "App Store";
+			name = Staging;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B6504A2BAEBD481FCCDC89BBC396C4A /* Build configuration list for PBXProject "Thai Ko Gym" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1EC36F036560158C3128F89DC629B165 /* Debug */,
-				0B8D50B0B331AC36BB13601CBAA97EA5 /* Staging */,
-				450903599BC040CB8B971213AADB68E4 /* App Store */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Staging;
-		};
 		4DA102FD4AEB00F514CC63CAE161A00F /* Build configuration list for PBXNativeTarget "Thai Ko Gym" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -576,6 +598,16 @@
 				53DF6334E4DE4C25822BFD29D50D1D39 /* Debug */,
 				DF35D08F1521DB2E9D696CCE4F70B17F /* Staging */,
 				3060D022B70202E31D4A040B945FA9CA /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Staging;
+		};
+		4B6504A2BAEBD481FCCDC89BBC396C4A /* Build configuration list for PBXProject "Thai Ko Gym" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC36F036560158C3128F89DC629B165 /* Debug */,
+				0B8D50B0B331AC36BB13601CBAA97EA5 /* Staging */,
+				450903599BC040CB8B971213AADB68E4 /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Staging;
