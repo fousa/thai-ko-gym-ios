@@ -1,0 +1,9 @@
+//
+//  Debug.xcconfig
+//  Thai Ko Gym
+//
+//  Created by Jelle Vandebeeck on 20/09/2016.
+//  Copyright © 2016 Fousa. All rights reserved.
+//
+
+PRODUCT_BUNDLE_IDENTIFIER = be.thaikogym.presences.debug
