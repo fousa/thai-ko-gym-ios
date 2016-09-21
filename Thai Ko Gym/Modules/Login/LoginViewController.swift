@@ -34,8 +34,8 @@ class LoginViewController: UIViewController {
                 return
             }
             
-            self.setEditing(false, animated: true)
-            self.flowNavigationController?.pushToMembersViewController()
+//            self.setEditing(false, animated: true)
+//            self.flowNavigationController?.pushToMembersViewController()
         }
     }
     

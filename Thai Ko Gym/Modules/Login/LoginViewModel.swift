@@ -18,13 +18,16 @@ class LoginViewModel {
         guard
             let email = email,
             let password = password,
-            email.isEmpty,
-            password.isEmpty else {
+            !email.isEmpty,
+            !password.isEmpty else {
             completionHandler(LoginError.incorrectInput)
             return
         }
-        
-        completionHandler(nil)
+
+        let request = AuthenticationRequest(email: email, password: password)
+        Service().perform(request: request) { 
+//            completionHandler(nil)
+        }
     }
     
 }
