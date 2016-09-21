@@ -12,15 +12,15 @@ class Service {
 
     // MARK: - Request
 
-    func perform(request: Request, completionHandler: @escaping (Error?) -> ()) {
+    func perform(request: Request, completionHandler: @escaping (Error?, Any?) -> ()) {
         Alamofire.request(request, method: request.method, parameters: nil, encoding: JSONEncoding.default, headers: request.headers)
             .validate(statusCode: 200..<300)
             .responseJSON { response in
                 switch response.result {
-                case .success:
-                    completionHandler(nil)
+                case .success(let json):
+                    completionHandler(nil, json)
                 case .failure(let error):
-                    completionHandler(error)
+                    completionHandler(error, nil)
                 }
         }
     }

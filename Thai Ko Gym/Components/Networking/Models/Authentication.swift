@@ -10,6 +10,14 @@ import Mapper
 
 struct Authentication: Mappable {
 
-    
+    // MARK: - Properties
+
+    let token: String
+
+    // MARK: - Mapper
+
+    init(map: Mapper) throws {
+        try token = map.from("auth_token")
+    }
 
 }

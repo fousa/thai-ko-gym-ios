@@ -29,8 +29,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func authenticate(sender: AnyObject) {
         print("🐜", "Start authenticating")
-        viewModel.authenticate(email: emailField.text, password: passwordField.text) { error in
-            if let _ = error {
+        viewModel.authenticate(email: emailField.text, password: passwordField.text) { result in
+            guard result.succeeded else {
                 return
             }
             
