@@ -7,3 +7,4 @@
 //
 
 PRODUCT_BUNDLE_IDENTIFIER = be.thaikogym.presences.debug
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDebug
