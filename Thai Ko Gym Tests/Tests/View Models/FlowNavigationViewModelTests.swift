@@ -14,7 +14,7 @@ class FlowNavigationViewModelTests: XCTestCase {
     
     func testAuthenticated() {
         let viewModel = FlowNavigationViewModel()
-        assert(viewModel.authenticated, "should be authenticated")
+        XCTAssertFalse(viewModel.authenticated, "should be authenticated")
     }
     
 }
