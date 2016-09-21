@@ -30,12 +30,12 @@ class LoginViewController: UIViewController {
     @IBAction func authenticate(sender: AnyObject) {
         print("🐜", "Start authenticating")
         viewModel.authenticate(email: emailField.text, password: passwordField.text) { error in
-            guard let _ = error else {
+            if let _ = error {
                 return
             }
             
-//            self.setEditing(false, animated: true)
-//            self.flowNavigationController?.pushToMembersViewController()
+            self.setEditing(false, animated: true)
+            self.flowNavigationController?.pushToMembersViewController()
         }
     }
     

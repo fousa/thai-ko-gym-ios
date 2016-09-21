@@ -12,10 +12,16 @@ class Service {
 
     // MARK: - Request
 
-    func perform(request: Request, completionHandler: @escaping () -> ()) {
-        Alamofire.request(request, method: request.method, parameters: nil, encoding: JSONEncoding.default, headers: request.headers).responseJSON { response in
-            print("✅ authentication request with response", response)
-            completionHandler()
+    func perform(request: Request, completionHandler: @escaping (Error?) -> ()) {
+        Alamofire.request(request, method: request.method, parameters: nil, encoding: JSONEncoding.default, headers: request.headers)
+            .validate(statusCode: 200..<300)
+            .responseJSON { response in
+                switch response.result {
+                case .success:
+                    completionHandler(nil)
+                case .failure(let error):
+                    completionHandler(error)
+                }
         }
     }
 

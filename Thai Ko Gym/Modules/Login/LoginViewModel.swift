@@ -14,7 +14,7 @@ class LoginViewModel {
     
     // MARK: - Authenticate
     
-    func authenticate(email: String?, password: String?, completionHandler: (Error?) -> ()) {
+    func authenticate(email: String?, password: String?, completionHandler: @escaping (Error?) -> ()) {
         guard
             let email = email,
             let password = password,
@@ -25,8 +25,8 @@ class LoginViewModel {
         }
 
         let request = AuthenticationRequest(email: email, password: password)
-        Service().perform(request: request) { 
-//            completionHandler(nil)
+        Service().perform(request: request) { error in
+            completionHandler(error)
         }
     }
     
