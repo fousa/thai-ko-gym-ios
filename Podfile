@@ -4,7 +4,7 @@ target 'Thai Ko Gym' do
   use_frameworks!
 
   pod 'Alamofire',   '~> 4.0'
-  pod 'ModelMapper', '~> 4.0'
+  pod 'ModelMapper', git: 'https://github.com/lyft/mapper.git', branch: 'swift-3.0'
 
   target 'Thai Ko Gym Tests' do
     inherit! :search_paths

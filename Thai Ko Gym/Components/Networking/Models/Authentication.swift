@@ -6,9 +6,9 @@
 //  Copyright © 2016 Fousa. All rights reserved.
 //
 
-import Foundation
+import Mapper
 
-struct Authentication {
+struct Authentication: Mappable {
 
     
 
