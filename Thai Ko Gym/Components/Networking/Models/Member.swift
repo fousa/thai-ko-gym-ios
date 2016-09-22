@@ -8,7 +8,7 @@
 
 import Mapper
 
-struct Member: Mappable {
+struct Member: Mappable, MemberPresentation {
 
     // MARK: - Properties
 

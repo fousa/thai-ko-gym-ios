@@ -12,7 +12,11 @@ class MembersViewController: UIViewController {
 
     // MARK: - View Model
 
-    private let viewModel = MembersViewModel()
+    fileprivate let viewModel = MembersViewModel()
+
+    // MARK: - Outlets
+
+    @IBOutlet var collectionView: UICollectionView!
 
     // MARK: - View flow
 
@@ -28,6 +32,9 @@ class MembersViewController: UIViewController {
         print("🚃 Start fetching members")
         viewModel.fetchMembers { result in
             print("🚃 Fetched members", result.objects?.count)
+
+            self.viewModel.members = result.objects as? [Member]
+            self.collectionView.reloadData()
         }
     }
 
@@ -42,5 +49,34 @@ class MembersViewController: UIViewController {
         }))
         present(controller, animated: true, completion: nil)
     }
+
+}
+
+extension MembersViewController: UICollectionViewDataSource {
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel.members?.count ?? 0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MemberCollectionViewCell
+
+        let member = viewModel.members![indexPath.item]
+        cell.configure(presentation: member)
+        return cell
+    }
+
+
+
+}
+
+extension MembersViewController: UICollectionViewDelegate {
+
+//    -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+//    {
+//    int numberOfCellInRow = 3;
+//    CGFloat cellWidth =  [[UIScreen mainScreen] bounds].size.width/numberOfCellInRow;
+//    return CGSizeMake(cellWidth, cellWidth);
+//    }
 
 }

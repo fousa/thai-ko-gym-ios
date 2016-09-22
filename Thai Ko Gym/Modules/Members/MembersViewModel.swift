@@ -10,6 +10,10 @@ import Keychain
 
 class MembersViewModel {
 
+    // MARK: - Data
+
+    var members: [Member]?
+
     // MARK: - Authentication
 
     func logout() {
