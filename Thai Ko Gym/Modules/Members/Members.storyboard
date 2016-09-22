@@ -9,7 +9,7 @@
         <!--Members View Controller-->
         <scene sceneID="FGp-gp-96t">
             <objects>
-                <viewController id="Ypd-m2-6Yf" customClass="MembersViewController" customModule="Thai_Ko_Gym" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Ypd-m2-6Yf" customClass="MembersViewController" customModule="Thai_Ko_Gym" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R9o-Sz-qKg"/>
                         <viewControllerLayoutGuide type="bottom" id="YeJ-pd-4IX"/>
@@ -34,13 +34,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="204" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfu-EF-pbR">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfu-EF-pbR">
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Dfu-EF-pbR" secondAttribute="trailing" id="FPX-9w-Vxe"/>
                                             <constraint firstItem="Dfu-EF-pbR" firstAttribute="leading" secondItem="lV6-t2-dmh" secondAttribute="leading" id="VWn-Va-rKw"/>

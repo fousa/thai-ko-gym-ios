@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BSGridCollectionViewLayout
 
 class MembersViewController: UIViewController {
 
@@ -23,7 +24,16 @@ class MembersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Setup navigation bar.
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout(sender:)))
+
+        // Setup collection view.
+
+        let layout = GridCollectionViewLayout()
+        layout.itemsPerRow = 3
+        layout.itemSpacing = 2
+        layout.itemHeightRatio = 3/4
+        collectionView.collectionViewLayout = layout
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -65,8 +75,6 @@ extension MembersViewController: UICollectionViewDataSource {
         cell.configure(presentation: member)
         return cell
     }
-
-
 
 }
 
