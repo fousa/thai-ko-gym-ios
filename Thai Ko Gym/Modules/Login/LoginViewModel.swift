@@ -28,7 +28,7 @@ class LoginViewModel {
     
     // MARK: - Authenticate
     
-    func authenticate(email: String?, password: String?, completionHandler: @escaping (LoginResult) -> ()) {
+    func authenticate(email: String?, password: String?, completionHandler: @escaping (Result) -> ()) {
         guard
             let email = email,
             let password = password,
@@ -49,7 +49,8 @@ class LoginViewModel {
                 let authentication = Authentication.from(json)
                 print("🔑 Authenticated")
                 Keychain.set(authenticationToken: authentication?.token)
-                completionHandler(.success)
+                completionHandler(.success(nil))
+                return
             }
 
             completionHandler(.error("Incorrect credentials"))

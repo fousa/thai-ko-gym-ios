@@ -9,7 +9,7 @@
         <!--Members View Controller-->
         <scene sceneID="FGp-gp-96t">
             <objects>
-                <viewController id="Ypd-m2-6Yf" customClass="MembersViewController" customModule="Thai_Ko_Gym" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Ypd-m2-6Yf" customClass="MembersViewController" customModule="Thai_Ko_Gym" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R9o-Sz-qKg"/>
                         <viewControllerLayoutGuide type="bottom" id="YeJ-pd-4IX"/>
@@ -18,22 +18,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEMBER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ay-SN-nk8">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ydX-FL-K6n">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MHg-df-HBq">
+                                    <size key="itemSize" width="204" height="130"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="lV6-t2-dmh" customClass="MemberCollectionViewCell" customModule="Thai_Ko_Gym" customModuleProvider="target">
+                                        <rect key="frame" x="86" y="0.0" width="204" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="204" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfu-EF-pbR">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Dfu-EF-pbR" secondAttribute="trailing" id="FPX-9w-Vxe"/>
+                                            <constraint firstItem="Dfu-EF-pbR" firstAttribute="leading" secondItem="lV6-t2-dmh" secondAttribute="leading" id="VWn-Va-rKw"/>
+                                            <constraint firstAttribute="bottom" secondItem="Dfu-EF-pbR" secondAttribute="bottom" id="fHv-Ah-cDI"/>
+                                            <constraint firstItem="Dfu-EF-pbR" firstAttribute="top" secondItem="lV6-t2-dmh" secondAttribute="top" id="vKi-Ut-YfS"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="Dfu-EF-pbR" id="o6T-dF-P1W"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ypd-m2-6Yf" id="Zlv-vf-HHn"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6ay-SN-nk8" firstAttribute="centerY" secondItem="OOu-pB-MJf" secondAttribute="centerY" id="e4O-bH-SSp"/>
-                            <constraint firstItem="6ay-SN-nk8" firstAttribute="centerX" secondItem="OOu-pB-MJf" secondAttribute="centerX" id="hvZ-ru-QCJ"/>
+                            <constraint firstItem="YeJ-pd-4IX" firstAttribute="top" secondItem="ydX-FL-K6n" secondAttribute="bottom" id="8xw-5W-G4b"/>
+                            <constraint firstAttribute="trailing" secondItem="ydX-FL-K6n" secondAttribute="trailing" id="9lb-XH-h2R"/>
+                            <constraint firstItem="ydX-FL-K6n" firstAttribute="top" secondItem="R9o-Sz-qKg" secondAttribute="bottom" id="bek-O4-hZO"/>
+                            <constraint firstItem="ydX-FL-K6n" firstAttribute="leading" secondItem="OOu-pB-MJf" secondAttribute="leading" id="lMm-ei-jbN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="ydX-FL-K6n" id="iyA-fu-OKi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUE-wj-deL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="220" y="162"/>
+            <point key="canvasLocation" x="220" y="161.46926536731635"/>
         </scene>
     </scenes>
 </document>
