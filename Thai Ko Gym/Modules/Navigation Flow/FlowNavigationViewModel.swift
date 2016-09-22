@@ -6,12 +6,14 @@
 //  Copyright © 2016 Fousa. All rights reserved.
 //
 
+import Keychain
+
 class FlowNavigationViewModel {
     
     // MARK: - Authentication
     
     var authenticated: Bool {
-        return false
+        return Keychain.authenticationToken != nil
     }
     
 }

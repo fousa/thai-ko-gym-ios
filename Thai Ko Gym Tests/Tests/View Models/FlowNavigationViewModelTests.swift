@@ -7,14 +7,26 @@
 //
 
 import XCTest
+import Keychain
 
 @testable import Thai_Ko_Gym
 
 class FlowNavigationViewModelTests: XCTestCase {
-    
+
+    // MARK: - Data
+
+    let viewModel = FlowNavigationViewModel()
+
+    // MARK: - Tests
+
     func testAuthenticated() {
-        let viewModel = FlowNavigationViewModel()
-        XCTAssertFalse(viewModel.authenticated, "should be authenticated")
+        Keychain.set(authenticationToken: "123")
+        XCTAssertTrue(viewModel.authenticated, "should be authenticated")
+    }
+
+    func testNotAuthenticated() {
+        Keychain.set(authenticationToken: nil)
+        XCTAssertFalse(viewModel.authenticated, "should not be authenticated")
     }
     
 }

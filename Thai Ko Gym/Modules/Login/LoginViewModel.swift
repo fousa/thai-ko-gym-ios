@@ -6,6 +6,8 @@
 //  Copyright © 2016 Fousa. All rights reserved.
 //
 
+import Keychain
+
 enum LoginResult {
     case error(String)
     case success
@@ -45,7 +47,8 @@ class LoginViewModel {
 
             if let json = json as? NSDictionary {
                 let authentication = Authentication.from(json)
-                print("🔑", authentication)
+                print("🔑 Authenticated")
+                Keychain.set(authenticationToken: authentication?.token)
                 completionHandler(.success)
             }
 
