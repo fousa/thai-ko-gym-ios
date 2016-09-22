@@ -1,0 +1,1526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0749DF57E4FA82A74EB6D6013A86D8E0 /* ModelMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EBBA70CFCB9FA606287AFF840B3B3E86 /* ModelMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F75ABE702E1901643D76E52E9135F31 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC14FE294E780518A17591E949BA5FC /* ParameterEncoding.swift */; };
+		1113664C39C8BE4F16F53037BD03E696 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		13031927BDC52335D2752BFFF291E2BA /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87756ECC71CA2001EDEC6661F21FEA6 /* Mappable.swift */; };
+		1881C86BB9071EADC9FACEBFEFD106DC /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F47A4E3D642A5F085B9AC93DC2CA48 /* Alamofire-dummy.m */; };
+		1D4699F5B56560A931298415F9756332 /* KeychainItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA487FDC8A1A2ED292A40CAEDDD4EF /* KeychainItemFactory.swift */; };
+		2043A64BA9E7547DB95C2FEAB2BE60FF /* Keychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5B3632BF9404D53DF8E899DE671F31 /* Keychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25D552544D67AC3C9457911F63375C7F /* KeychainProtocolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D5F084A63CE2459707D449DAE8E4D /* KeychainProtocolType.swift */; };
+		2A5939B7B0B6449C4A41EFDF9B4E2E3B /* Keychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 611086CD7C797EF21D5AB55659683B6A /* Keychain-dummy.m */; };
+		321CC193A2F6E29A446A0D50061DED04 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D74D93E479D12575DC110871AE53F /* NetworkReachabilityManager.swift */; };
+		376DD32F716D4D24977E8D54EC4AB612 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1EAC0F23E4672051034BE26E9F995A /* DispatchQueue+Alamofire.swift */; };
+		3CCD05940D7D9D000F596C4ADA7EF8F2 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193DEDDDA9F065A4F952F79236D1025 /* Timeline.swift */; };
+		439FBF5F42362E104CEFB97A9656DA80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		47E0C0AD78F52BB03C12A974CA610185 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4611E135EC1EB83E5140EEB8B4A84759 /* Mapper.swift */; };
+		50F3D62EC40E71045490CAFD7D5ED8D1 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA8285D602F8772E0F509B2FC1E10D0 /* ResponseSerialization.swift */; };
+		51B2DDECF4CA2CB821B01A7ED21A5F59 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE684F5F2A787856E6A2039BEB5EFA /* Response.swift */; };
+		54B321F309DFEF23425E75FBF99E78F8 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0055AFA0B43CAEC8D02C489E3BE230 /* ServerTrustPolicy.swift */; };
+		558456E6B468109C89F0D8D71AD5BFFB /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9E7C9E7DE6AA541811B8DCAA2F2899 /* Alamofire.swift */; };
+		5A05082A34B99E748610248DE920BF47 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C6A007F893602B03B35A2741D5147 /* Keychain.swift */; };
+		646F200AF34607DB4BE5093D9A5BA6C0 /* DefaultConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E4A216979C7CD6F172E2793C213756 /* DefaultConvertible.swift */; };
+		687142992D5D02D47B2A0975DB96744B /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338724D0674174B6BB575505C2C9243A /* KeychainItem.swift */; };
+		6AFBAB25DF1FDBC1B7FB6ADC11C85FE6 /* ModelMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE1D6A5B2CCBF0D899730D9E459BD5E /* ModelMapper-dummy.m */; };
+		76157515ADC689642283825105B2AC08 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD71923B14BA96A6C84C91C6FED29B2 /* SessionDelegate.swift */; };
+		76218B1060174468EFA5CE76066B1498 /* Transform+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B22E91F05412E401265D67DA0D9093 /* Transform+Dictionary.swift */; };
+		7982455CBA24A2F29AAE7ABDB6D1CA29 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D413873339E37D3AD792B1A8078061E /* TaskDelegate.swift */; };
+		84D5BE50606DE43ED2AA3210CA8C0076 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2AA28FC5E40BC4CEEEA36DEA474734 /* MultipartFormData.swift */; };
+		90D864FA1CECF822DEF90ACB45C30675 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57E7CD8D4442B2E58F563CA3E09B8E /* Request.swift */; };
+		927DFA58893F2AF4C9900934D156202F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		96031DC4AA28B152CC5EE42D53A9D732 /* NSDictionary+Safety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533511FDAECF702A00B3D882502F1226 /* NSDictionary+Safety.swift */; };
+		A05757ADDC13EA6B5854FB699DAAA1EB /* Pods-Thai Ko Gym Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CAB5ABF7EEA3D04C711065F2EB09F54E /* Pods-Thai Ko Gym Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0BB87FF69549EF783A55D4AED81A6D2 /* KeychainItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52049531DBC37625F9BA30C1CE9E72 /* KeychainItemClass.swift */; };
+		AB338843049778088EBDFD77F9D7A5E2 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CA6E011439319380B2EE6C16FE7344 /* AFError.swift */; };
+		B313D80EE5DA686E1C6EFE16384477F5 /* Convertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079560BE10ECFA2998730DB37549A1C7 /* Convertible.swift */; };
+		B5785FF7C94547F7BD92C0E24D70371B /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EC9F02D71442705533A9B8A6B19DE4 /* Validation.swift */; };
+		B747C63D0B4E6F9E33C3ADFCF850E6A0 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B36B6C198E9C4A559B39EAE35F316E /* SessionManager.swift */; };
+		B9307B3F4D87F076C5AE6E2E2F2E6328 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FB0B59179CDAB8F3206F00D55A86E3 /* Result.swift */; };
+		BDD7E98BF02530402079A22B257722C0 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD1C27992243CF8AE92559D5883E2FF /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5911619285C5E9C39F10EE75E00C2D9 /* MapperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BB159B70BB3C1AE20C10FCF34DEED6 /* MapperError.swift */; };
+		CDBE1CE39A1943117C789A4FD5AD45E9 /* Pods-Thai Ko Gym-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB52C81DFA60249B501D1F70852FED96 /* Pods-Thai Ko Gym-dummy.m */; };
+		CFC30A44E658A63088F0FAABB329E314 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDB39F04AE3BBFF57F0EB3D9818E2A7 /* Transform.swift */; };
+		D36C3EC804A92767EA9ABF3253659B51 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E709CDF2226D0ED2CE16E3FCF727FFE7 /* Notifications.swift */; };
+		E07F0981C28911B977CA141ADDBD57F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		E09478C6914FEFDCD3593F59EC286E76 /* Pods-Thai Ko Gym Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83299D3A99D188691AFAD1DB44DA9CFE /* Pods-Thai Ko Gym Tests-dummy.m */; };
+		E488A8B1BF0A9189336CE0EA91181CD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		E9751606604CEA36A4EEDC49D3E945FF /* Pods-Thai Ko Gym-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7289D543DAE3BD8489FD9C3B5386A911 /* Pods-Thai Ko Gym-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F75E69703B8755660BB58B312BA208C3 /* NSURL+Convertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A59E7645D17FD01E1349DB61AB95E0 /* NSURL+Convertible.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		095741AFF3497A6DAF46871058721732 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3189A7889397089996EEB0BD7935F9A6;
+			remoteInfo = ModelMapper;
+		};
+		2F27EE8560EF63F0BCC345AC22060034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74E7F9EA9F7427365C0C1D19CA8B2411;
+			remoteInfo = Keychain;
+		};
+		5E4AC888BBD0D995CA88447C0A1975B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50380D93B96679DFB1AD2089EB6E4E53;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0475A4AB002F243BC1455E3599E3FCD2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		079560BE10ECFA2998730DB37549A1C7 /* Convertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Convertible.swift; path = Sources/Convertible.swift; sourceTree = "<group>"; };
+		0C3D74D93E479D12575DC110871AE53F /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		1AD1C27992243CF8AE92559D5883E2FF /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		1C52049531DBC37625F9BA30C1CE9E72 /* KeychainItemClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainItemClass.swift; path = Keychain/Classes/KeychainItemClass.swift; sourceTree = "<group>"; };
+		1E0055AFA0B43CAEC8D02C489E3BE230 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		1FEE684F5F2A787856E6A2039BEB5EFA /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		20349B9D8AFC0DFB4A0E454A7A6D750C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B36B6C198E9C4A559B39EAE35F316E /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		237184EA3F6D5511346DC7B0A5CFEE1B /* Pods-Thai Ko Gym Tests.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thai Ko Gym Tests.app store.xcconfig"; sourceTree = "<group>"; };
+		2563BD45B36493E45C75C72059BBE364 /* Keychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Keychain.xcconfig; sourceTree = "<group>"; };
+		26EC9F02D71442705533A9B8A6B19DE4 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		2B1EAC0F23E4672051034BE26E9F995A /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		2BB0B2CD4026A2665F2E2688AED2447E /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		2C5B3632BF9404D53DF8E899DE671F31 /* Keychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Keychain-umbrella.h"; sourceTree = "<group>"; };
+		2D7AD9C079FE4676FECB23720C4BAD80 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E200CFF7548E545BD17A135E8CB07DD /* Pods_Thai_Ko_Gym.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thai_Ko_Gym.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EF2E100421BC40BB8EF0E8F6FCDCC5A /* Pods-Thai Ko Gym Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thai Ko Gym Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		31FB0B59179CDAB8F3206F00D55A86E3 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		338724D0674174B6BB575505C2C9243A /* KeychainItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainItem.swift; path = Keychain/Classes/KeychainItem.swift; sourceTree = "<group>"; };
+		381C6A007F893602B03B35A2741D5147 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Keychain/Classes/Keychain.swift; sourceTree = "<group>"; };
+		3F2AA28FC5E40BC4CEEEA36DEA474734 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		3FEE8329F9FF956DB7E6F2EAC29B50D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4148B5E10BAF1C0D102E2A4186427A9E /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		41BB159B70BB3C1AE20C10FCF34DEED6 /* MapperError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapperError.swift; path = Sources/MapperError.swift; sourceTree = "<group>"; };
+		4611E135EC1EB83E5140EEB8B4A84759 /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Sources/Mapper.swift; sourceTree = "<group>"; };
+		468757B9CFF1A697FA827247A4F186FA /* Pods-Thai Ko Gym Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Thai Ko Gym Tests-resources.sh"; sourceTree = "<group>"; };
+		4D413873339E37D3AD792B1A8078061E /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		503E45521290AF47BFBF458818832CAD /* Pods-Thai Ko Gym.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thai Ko Gym.app store.xcconfig"; sourceTree = "<group>"; };
+		52F47A4E3D642A5F085B9AC93DC2CA48 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		533511FDAECF702A00B3D882502F1226 /* NSDictionary+Safety.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDictionary+Safety.swift"; path = "Sources/NSDictionary+Safety.swift"; sourceTree = "<group>"; };
+		5467ABF0E9B090413C24C5C012BE64D1 /* Pods-Thai Ko Gym Tests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thai Ko Gym Tests.staging.xcconfig"; sourceTree = "<group>"; };
+		56E4A216979C7CD6F172E2793C213756 /* DefaultConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultConvertible.swift; path = Sources/DefaultConvertible.swift; sourceTree = "<group>"; };
+		5896C790B19876A7F1F73F010ABE4403 /* Keychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Keychain-prefix.pch"; sourceTree = "<group>"; };
+		595AC8D4E0262190C0380DDB5402A7BC /* Pods-Thai Ko Gym-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Thai Ko Gym-acknowledgements.markdown"; sourceTree = "<group>"; };
+		611086CD7C797EF21D5AB55659683B6A /* Keychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Keychain-dummy.m"; sourceTree = "<group>"; };
+		7193DEDDDA9F065A4F952F79236D1025 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		7289D543DAE3BD8489FD9C3B5386A911 /* Pods-Thai Ko Gym-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Thai Ko Gym-umbrella.h"; sourceTree = "<group>"; };
+		76D3B77C26283872156C23A8C9FC96F1 /* Pods_Thai_Ko_Gym_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thai_Ko_Gym_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78DF2240336752517DA632C1887756C5 /* Keychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Keychain.modulemap; sourceTree = "<group>"; };
+		83299D3A99D188691AFAD1DB44DA9CFE /* Pods-Thai Ko Gym Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Thai Ko Gym Tests-dummy.m"; sourceTree = "<group>"; };
+		8593B168E2AA8248F7CA509BA549B7EF /* Pods-Thai Ko Gym.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thai Ko Gym.staging.xcconfig"; sourceTree = "<group>"; };
+		890A2ED5D6849B8059BC40BDAE25CD63 /* ModelMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ModelMapper.modulemap; sourceTree = "<group>"; };
+		8A841FD1FA9AC355DC198312080E7DC5 /* ModelMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModelMapper.xcconfig; sourceTree = "<group>"; };
+		8FEEE4945E7E7A519961B4C95E2523F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9312A0A1C90B5A254C74D34E71400D9B /* ModelMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModelMapper-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D8B84A9652487419BDF78D399568A3E /* Pods-Thai Ko Gym.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Thai Ko Gym.modulemap"; sourceTree = "<group>"; };
+		9D9E7C9E7DE6AA541811B8DCAA2F2899 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		9EA8285D602F8772E0F509B2FC1E10D0 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		9F57E7CD8D4442B2E58F563CA3E09B8E /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		A4AFB31CBF4D717B72992122CCA15785 /* Pods-Thai Ko Gym.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thai Ko Gym.debug.xcconfig"; sourceTree = "<group>"; };
+		A9A66120CB57967001EED035CE2E4357 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		AAD5155065E1D5FE2308E796426044D9 /* Pods-Thai Ko Gym-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Thai Ko Gym-resources.sh"; sourceTree = "<group>"; };
+		ABF3D2ED4EBD27B8E72CAB28588BAD43 /* Keychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Keychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9DC953907C581234E2CB90AA6DFB82 /* Pods-Thai Ko Gym Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Thai Ko Gym Tests.modulemap"; sourceTree = "<group>"; };
+		B8F51A82D419CE11344E7934588159D3 /* Pods-Thai Ko Gym-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thai Ko Gym-acknowledgements.plist"; sourceTree = "<group>"; };
+		BAC302C03B9C44088B7AE52150D362DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFDB39F04AE3BBFF57F0EB3D9818E2A7 /* Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transform.swift; path = Sources/Transform.swift; sourceTree = "<group>"; };
+		C01D5F084A63CE2459707D449DAE8E4D /* KeychainProtocolType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainProtocolType.swift; path = Keychain/Classes/KeychainProtocolType.swift; sourceTree = "<group>"; };
+		C4C054D2FDE408A34D9B752BF851E894 /* Pods-Thai Ko Gym Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Thai Ko Gym Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C8B22E91F05412E401265D67DA0D9093 /* Transform+Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Transform+Dictionary.swift"; path = "Sources/Transform+Dictionary.swift"; sourceTree = "<group>"; };
+		CAB5ABF7EEA3D04C711065F2EB09F54E /* Pods-Thai Ko Gym Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Thai Ko Gym Tests-umbrella.h"; sourceTree = "<group>"; };
+		CCD71923B14BA96A6C84C91C6FED29B2 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		CCDED22569744588DCC93AF9A94E7E07 /* Pods-Thai Ko Gym-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Thai Ko Gym-frameworks.sh"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CEEA30BEE21A3E3AAC8828D914EF411A /* Mapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87756ECC71CA2001EDEC6661F21FEA6 /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
+		D940137190EEDDE6B80B31A0ADA2E702 /* Pods-Thai Ko Gym Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thai Ko Gym Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DC8B1BCDC3A0FF67751F5774D22062B1 /* Pods-Thai Ko Gym.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thai Ko Gym.release.xcconfig"; sourceTree = "<group>"; };
+		E709CDF2226D0ED2CE16E3FCF727FFE7 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		E7CA6E011439319380B2EE6C16FE7344 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		E9D63649C04A8AA7C19A20CC26C5170C /* Pods-Thai Ko Gym Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Thai Ko Gym Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EBBA70CFCB9FA606287AFF840B3B3E86 /* ModelMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModelMapper-umbrella.h"; sourceTree = "<group>"; };
+		EDB751B029272E82D65935FEAA6C456B /* Pods-Thai Ko Gym Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thai Ko Gym Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EEE1D6A5B2CCBF0D899730D9E459BD5E /* ModelMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModelMapper-dummy.m"; sourceTree = "<group>"; };
+		F3A59E7645D17FD01E1349DB61AB95E0 /* NSURL+Convertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURL+Convertible.swift"; path = "Sources/NSURL+Convertible.swift"; sourceTree = "<group>"; };
+		F5BA487FDC8A1A2ED292A40CAEDDD4EF /* KeychainItemFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainItemFactory.swift; path = Keychain/Classes/KeychainItemFactory.swift; sourceTree = "<group>"; };
+		FB52C81DFA60249B501D1F70852FED96 /* Pods-Thai Ko Gym-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Thai Ko Gym-dummy.m"; sourceTree = "<group>"; };
+		FDC14FE294E780518A17591E949BA5FC /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		238CCF222C5265626CDFD5AB245B10AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E488A8B1BF0A9189336CE0EA91181CD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423B08B6F729E73D19F3AC149095A343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1113664C39C8BE4F16F53037BD03E696 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51A4F61975F26818BF18D7C2E8EF01DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927DFA58893F2AF4C9900934D156202F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6154CC3381B6751A27394E60D44708FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				439FBF5F42362E104CEFB97A9656DA80 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6273986A1C2C33E15BBA7149BA622F60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E07F0981C28911B977CA141ADDBD57F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10348296D2EA80D6BC7D521D92DED656 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD2E9C46FA8848103C1AF22E742F15 /* Pods-Thai Ko Gym */,
+				F596509E4930565664721C8BA3C169EF /* Pods-Thai Ko Gym Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		14A641450FE5E26F6B3E9703AA03E651 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D7AD9C079FE4676FECB23720C4BAD80 /* Info.plist */,
+				78DF2240336752517DA632C1887756C5 /* Keychain.modulemap */,
+				2563BD45B36493E45C75C72059BBE364 /* Keychain.xcconfig */,
+				611086CD7C797EF21D5AB55659683B6A /* Keychain-dummy.m */,
+				5896C790B19876A7F1F73F010ABE4403 /* Keychain-prefix.pch */,
+				2C5B3632BF9404D53DF8E899DE671F31 /* Keychain-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Keychain";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7F8597D54D36BCA64BD4CD4307850F38 /* Pods */,
+				E51085838C6FE7496A0EC88DC7135824 /* Products */,
+				10348296D2EA80D6BC7D521D92DED656 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F8597D54D36BCA64BD4CD4307850F38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1B80B936156EAD1F65DC1194D12913B /* Alamofire */,
+				BD842638410FA907C06CD438D51C10B1 /* Keychain */,
+				FC1F54FE60201D3367684B1554462CEB /* ModelMapper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9FE58C51B3ED66595A0A8C920037C40B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20349B9D8AFC0DFB4A0E454A7A6D750C /* Info.plist */,
+				890A2ED5D6849B8059BC40BDAE25CD63 /* ModelMapper.modulemap */,
+				8A841FD1FA9AC355DC198312080E7DC5 /* ModelMapper.xcconfig */,
+				EEE1D6A5B2CCBF0D899730D9E459BD5E /* ModelMapper-dummy.m */,
+				9312A0A1C90B5A254C74D34E71400D9B /* ModelMapper-prefix.pch */,
+				EBBA70CFCB9FA606287AFF840B3B3E86 /* ModelMapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ModelMapper";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD842638410FA907C06CD438D51C10B1 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				381C6A007F893602B03B35A2741D5147 /* Keychain.swift */,
+				338724D0674174B6BB575505C2C9243A /* KeychainItem.swift */,
+				1C52049531DBC37625F9BA30C1CE9E72 /* KeychainItemClass.swift */,
+				F5BA487FDC8A1A2ED292A40CAEDDD4EF /* KeychainItemFactory.swift */,
+				C01D5F084A63CE2459707D449DAE8E4D /* KeychainProtocolType.swift */,
+				14A641450FE5E26F6B3E9703AA03E651 /* Support Files */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		C1B80B936156EAD1F65DC1194D12913B /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				E7CA6E011439319380B2EE6C16FE7344 /* AFError.swift */,
+				9D9E7C9E7DE6AA541811B8DCAA2F2899 /* Alamofire.swift */,
+				2B1EAC0F23E4672051034BE26E9F995A /* DispatchQueue+Alamofire.swift */,
+				3F2AA28FC5E40BC4CEEEA36DEA474734 /* MultipartFormData.swift */,
+				0C3D74D93E479D12575DC110871AE53F /* NetworkReachabilityManager.swift */,
+				E709CDF2226D0ED2CE16E3FCF727FFE7 /* Notifications.swift */,
+				FDC14FE294E780518A17591E949BA5FC /* ParameterEncoding.swift */,
+				9F57E7CD8D4442B2E58F563CA3E09B8E /* Request.swift */,
+				1FEE684F5F2A787856E6A2039BEB5EFA /* Response.swift */,
+				9EA8285D602F8772E0F509B2FC1E10D0 /* ResponseSerialization.swift */,
+				31FB0B59179CDAB8F3206F00D55A86E3 /* Result.swift */,
+				1E0055AFA0B43CAEC8D02C489E3BE230 /* ServerTrustPolicy.swift */,
+				CCD71923B14BA96A6C84C91C6FED29B2 /* SessionDelegate.swift */,
+				20B36B6C198E9C4A559B39EAE35F316E /* SessionManager.swift */,
+				4D413873339E37D3AD792B1A8078061E /* TaskDelegate.swift */,
+				7193DEDDDA9F065A4F952F79236D1025 /* Timeline.swift */,
+				26EC9F02D71442705533A9B8A6B19DE4 /* Validation.swift */,
+				CE3BDBFDD6B5775F73C23A19195ADDA6 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		CE3BDBFDD6B5775F73C23A19195ADDA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4148B5E10BAF1C0D102E2A4186427A9E /* Alamofire.modulemap */,
+				2BB0B2CD4026A2665F2E2688AED2447E /* Alamofire.xcconfig */,
+				52F47A4E3D642A5F085B9AC93DC2CA48 /* Alamofire-dummy.m */,
+				A9A66120CB57967001EED035CE2E4357 /* Alamofire-prefix.pch */,
+				1AD1C27992243CF8AE92559D5883E2FF /* Alamofire-umbrella.h */,
+				3FEE8329F9FF956DB7E6F2EAC29B50D2 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		E51085838C6FE7496A0EC88DC7135824 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0475A4AB002F243BC1455E3599E3FCD2 /* Alamofire.framework */,
+				ABF3D2ED4EBD27B8E72CAB28588BAD43 /* Keychain.framework */,
+				CEEA30BEE21A3E3AAC8828D914EF411A /* Mapper.framework */,
+				2E200CFF7548E545BD17A135E8CB07DD /* Pods_Thai_Ko_Gym.framework */,
+				76D3B77C26283872156C23A8C9FC96F1 /* Pods_Thai_Ko_Gym_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2BD2E9C46FA8848103C1AF22E742F15 /* Pods-Thai Ko Gym */ = {
+			isa = PBXGroup;
+			children = (
+				BAC302C03B9C44088B7AE52150D362DA /* Info.plist */,
+				9D8B84A9652487419BDF78D399568A3E /* Pods-Thai Ko Gym.modulemap */,
+				595AC8D4E0262190C0380DDB5402A7BC /* Pods-Thai Ko Gym-acknowledgements.markdown */,
+				B8F51A82D419CE11344E7934588159D3 /* Pods-Thai Ko Gym-acknowledgements.plist */,
+				FB52C81DFA60249B501D1F70852FED96 /* Pods-Thai Ko Gym-dummy.m */,
+				CCDED22569744588DCC93AF9A94E7E07 /* Pods-Thai Ko Gym-frameworks.sh */,
+				AAD5155065E1D5FE2308E796426044D9 /* Pods-Thai Ko Gym-resources.sh */,
+				7289D543DAE3BD8489FD9C3B5386A911 /* Pods-Thai Ko Gym-umbrella.h */,
+				503E45521290AF47BFBF458818832CAD /* Pods-Thai Ko Gym.app store.xcconfig */,
+				A4AFB31CBF4D717B72992122CCA15785 /* Pods-Thai Ko Gym.debug.xcconfig */,
+				DC8B1BCDC3A0FF67751F5774D22062B1 /* Pods-Thai Ko Gym.release.xcconfig */,
+				8593B168E2AA8248F7CA509BA549B7EF /* Pods-Thai Ko Gym.staging.xcconfig */,
+			);
+			name = "Pods-Thai Ko Gym";
+			path = "Target Support Files/Pods-Thai Ko Gym";
+			sourceTree = "<group>";
+		};
+		F596509E4930565664721C8BA3C169EF /* Pods-Thai Ko Gym Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8FEEE4945E7E7A519961B4C95E2523F1 /* Info.plist */,
+				AF9DC953907C581234E2CB90AA6DFB82 /* Pods-Thai Ko Gym Tests.modulemap */,
+				E9D63649C04A8AA7C19A20CC26C5170C /* Pods-Thai Ko Gym Tests-acknowledgements.markdown */,
+				D940137190EEDDE6B80B31A0ADA2E702 /* Pods-Thai Ko Gym Tests-acknowledgements.plist */,
+				83299D3A99D188691AFAD1DB44DA9CFE /* Pods-Thai Ko Gym Tests-dummy.m */,
+				C4C054D2FDE408A34D9B752BF851E894 /* Pods-Thai Ko Gym Tests-frameworks.sh */,
+				468757B9CFF1A697FA827247A4F186FA /* Pods-Thai Ko Gym Tests-resources.sh */,
+				CAB5ABF7EEA3D04C711065F2EB09F54E /* Pods-Thai Ko Gym Tests-umbrella.h */,
+				237184EA3F6D5511346DC7B0A5CFEE1B /* Pods-Thai Ko Gym Tests.app store.xcconfig */,
+				2EF2E100421BC40BB8EF0E8F6FCDCC5A /* Pods-Thai Ko Gym Tests.debug.xcconfig */,
+				EDB751B029272E82D65935FEAA6C456B /* Pods-Thai Ko Gym Tests.release.xcconfig */,
+				5467ABF0E9B090413C24C5C012BE64D1 /* Pods-Thai Ko Gym Tests.staging.xcconfig */,
+			);
+			name = "Pods-Thai Ko Gym Tests";
+			path = "Target Support Files/Pods-Thai Ko Gym Tests";
+			sourceTree = "<group>";
+		};
+		FC1F54FE60201D3367684B1554462CEB /* ModelMapper */ = {
+			isa = PBXGroup;
+			children = (
+				079560BE10ECFA2998730DB37549A1C7 /* Convertible.swift */,
+				56E4A216979C7CD6F172E2793C213756 /* DefaultConvertible.swift */,
+				D87756ECC71CA2001EDEC6661F21FEA6 /* Mappable.swift */,
+				4611E135EC1EB83E5140EEB8B4A84759 /* Mapper.swift */,
+				41BB159B70BB3C1AE20C10FCF34DEED6 /* MapperError.swift */,
+				533511FDAECF702A00B3D882502F1226 /* NSDictionary+Safety.swift */,
+				F3A59E7645D17FD01E1349DB61AB95E0 /* NSURL+Convertible.swift */,
+				BFDB39F04AE3BBFF57F0EB3D9818E2A7 /* Transform.swift */,
+				C8B22E91F05412E401265D67DA0D9093 /* Transform+Dictionary.swift */,
+				9FE58C51B3ED66595A0A8C920037C40B /* Support Files */,
+			);
+			path = ModelMapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3FC15AF993D54370B2C24EDB427A6A21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD7E98BF02530402079A22B257722C0 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655AD9B8AEE0157CADE1121B4007FC96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2043A64BA9E7547DB95C2FEAB2BE60FF /* Keychain-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD2F1C3F51FDFF1D398B93D74ABFD77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05757ADDC13EA6B5854FB699DAAA1EB /* Pods-Thai Ko Gym Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17B71F5AB4BEA6E30EEC4586B51584D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9751606604CEA36A4EEDC49D3E945FF /* Pods-Thai Ko Gym-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4A20CB76F275422749DF026DE5EAF3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0749DF57E4FA82A74EB6D6013A86D8E0 /* ModelMapper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3189A7889397089996EEB0BD7935F9A6 /* ModelMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E732521DC607DD18D10FE29B5EED70 /* Build configuration list for PBXNativeTarget "ModelMapper" */;
+			buildPhases = (
+				E6CA9AB47E23BCD1F7EC9C29DCC69EE8 /* Sources */,
+				6273986A1C2C33E15BBA7149BA622F60 /* Frameworks */,
+				FC4A20CB76F275422749DF026DE5EAF3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModelMapper;
+			productName = ModelMapper;
+			productReference = CEEA30BEE21A3E3AAC8828D914EF411A /* Mapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3D11F30C98F3A3A7FBED8DEB3EFE97DA /* Pods-Thai Ko Gym Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 335868F475E242464C29D0C807267501 /* Build configuration list for PBXNativeTarget "Pods-Thai Ko Gym Tests" */;
+			buildPhases = (
+				5D94FFBDDF6C6E5A046CA96FBF0E8B45 /* Sources */,
+				6154CC3381B6751A27394E60D44708FA /* Frameworks */,
+				9FD2F1C3F51FDFF1D398B93D74ABFD77 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Thai Ko Gym Tests";
+			productName = "Pods-Thai Ko Gym Tests";
+			productReference = 76D3B77C26283872156C23A8C9FC96F1 /* Pods_Thai_Ko_Gym_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4FBFBCD326448080A77B1C78618B2911 /* Pods-Thai Ko Gym */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C2B37221D8C19F33CCEB1D3F56CDC44 /* Build configuration list for PBXNativeTarget "Pods-Thai Ko Gym" */;
+			buildPhases = (
+				707986CF363307D63CC1B7A7D935956E /* Sources */,
+				423B08B6F729E73D19F3AC149095A343 /* Frameworks */,
+				D17B71F5AB4BEA6E30EEC4586B51584D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79D404CD3ADE61E45621F18C98AB0981 /* PBXTargetDependency */,
+				3A7D206BFDD243EB8C7A76C813727DBC /* PBXTargetDependency */,
+				B666D4C4B6E8B69AB2F306D0A2714D80 /* PBXTargetDependency */,
+			);
+			name = "Pods-Thai Ko Gym";
+			productName = "Pods-Thai Ko Gym";
+			productReference = 2E200CFF7548E545BD17A135E8CB07DD /* Pods_Thai_Ko_Gym.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		50380D93B96679DFB1AD2089EB6E4E53 /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B852F28F0036FA954423A7474147B00 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				9F7DB574E7B7A9EC712D1552AE9E5346 /* Sources */,
+				238CCF222C5265626CDFD5AB245B10AC /* Frameworks */,
+				3FC15AF993D54370B2C24EDB427A6A21 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 0475A4AB002F243BC1455E3599E3FCD2 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		74E7F9EA9F7427365C0C1D19CA8B2411 /* Keychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074835D99F50936D0A98D0EC133695AC /* Build configuration list for PBXNativeTarget "Keychain" */;
+			buildPhases = (
+				DABD1C4E4475600EA4D66FE03C0A280C /* Sources */,
+				51A4F61975F26818BF18D7C2E8EF01DC /* Frameworks */,
+				655AD9B8AEE0157CADE1121B4007FC96 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keychain;
+			productName = Keychain;
+			productReference = ABF3D2ED4EBD27B8E72CAB28588BAD43 /* Keychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E51085838C6FE7496A0EC88DC7135824 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50380D93B96679DFB1AD2089EB6E4E53 /* Alamofire */,
+				74E7F9EA9F7427365C0C1D19CA8B2411 /* Keychain */,
+				3189A7889397089996EEB0BD7935F9A6 /* ModelMapper */,
+				4FBFBCD326448080A77B1C78618B2911 /* Pods-Thai Ko Gym */,
+				3D11F30C98F3A3A7FBED8DEB3EFE97DA /* Pods-Thai Ko Gym Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D94FFBDDF6C6E5A046CA96FBF0E8B45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09478C6914FEFDCD3593F59EC286E76 /* Pods-Thai Ko Gym Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707986CF363307D63CC1B7A7D935956E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBE1CE39A1943117C789A4FD5AD45E9 /* Pods-Thai Ko Gym-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F7DB574E7B7A9EC712D1552AE9E5346 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB338843049778088EBDFD77F9D7A5E2 /* AFError.swift in Sources */,
+				1881C86BB9071EADC9FACEBFEFD106DC /* Alamofire-dummy.m in Sources */,
+				558456E6B468109C89F0D8D71AD5BFFB /* Alamofire.swift in Sources */,
+				376DD32F716D4D24977E8D54EC4AB612 /* DispatchQueue+Alamofire.swift in Sources */,
+				84D5BE50606DE43ED2AA3210CA8C0076 /* MultipartFormData.swift in Sources */,
+				321CC193A2F6E29A446A0D50061DED04 /* NetworkReachabilityManager.swift in Sources */,
+				D36C3EC804A92767EA9ABF3253659B51 /* Notifications.swift in Sources */,
+				0F75ABE702E1901643D76E52E9135F31 /* ParameterEncoding.swift in Sources */,
+				90D864FA1CECF822DEF90ACB45C30675 /* Request.swift in Sources */,
+				51B2DDECF4CA2CB821B01A7ED21A5F59 /* Response.swift in Sources */,
+				50F3D62EC40E71045490CAFD7D5ED8D1 /* ResponseSerialization.swift in Sources */,
+				B9307B3F4D87F076C5AE6E2E2F2E6328 /* Result.swift in Sources */,
+				54B321F309DFEF23425E75FBF99E78F8 /* ServerTrustPolicy.swift in Sources */,
+				76157515ADC689642283825105B2AC08 /* SessionDelegate.swift in Sources */,
+				B747C63D0B4E6F9E33C3ADFCF850E6A0 /* SessionManager.swift in Sources */,
+				7982455CBA24A2F29AAE7ABDB6D1CA29 /* TaskDelegate.swift in Sources */,
+				3CCD05940D7D9D000F596C4ADA7EF8F2 /* Timeline.swift in Sources */,
+				B5785FF7C94547F7BD92C0E24D70371B /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABD1C4E4475600EA4D66FE03C0A280C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5939B7B0B6449C4A41EFDF9B4E2E3B /* Keychain-dummy.m in Sources */,
+				5A05082A34B99E748610248DE920BF47 /* Keychain.swift in Sources */,
+				687142992D5D02D47B2A0975DB96744B /* KeychainItem.swift in Sources */,
+				A0BB87FF69549EF783A55D4AED81A6D2 /* KeychainItemClass.swift in Sources */,
+				1D4699F5B56560A931298415F9756332 /* KeychainItemFactory.swift in Sources */,
+				25D552544D67AC3C9457911F63375C7F /* KeychainProtocolType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CA9AB47E23BCD1F7EC9C29DCC69EE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B313D80EE5DA686E1C6EFE16384477F5 /* Convertible.swift in Sources */,
+				646F200AF34607DB4BE5093D9A5BA6C0 /* DefaultConvertible.swift in Sources */,
+				13031927BDC52335D2752BFFF291E2BA /* Mappable.swift in Sources */,
+				47E0C0AD78F52BB03C12A974CA610185 /* Mapper.swift in Sources */,
+				C5911619285C5E9C39F10EE75E00C2D9 /* MapperError.swift in Sources */,
+				6AFBAB25DF1FDBC1B7FB6ADC11C85FE6 /* ModelMapper-dummy.m in Sources */,
+				96031DC4AA28B152CC5EE42D53A9D732 /* NSDictionary+Safety.swift in Sources */,
+				F75E69703B8755660BB58B312BA208C3 /* NSURL+Convertible.swift in Sources */,
+				76218B1060174468EFA5CE76066B1498 /* Transform+Dictionary.swift in Sources */,
+				CFC30A44E658A63088F0FAABB329E314 /* Transform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A7D206BFDD243EB8C7A76C813727DBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Keychain;
+			target = 74E7F9EA9F7427365C0C1D19CA8B2411 /* Keychain */;
+			targetProxy = 2F27EE8560EF63F0BCC345AC22060034 /* PBXContainerItemProxy */;
+		};
+		79D404CD3ADE61E45621F18C98AB0981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 50380D93B96679DFB1AD2089EB6E4E53 /* Alamofire */;
+			targetProxy = 5E4AC888BBD0D995CA88447C0A1975B4 /* PBXContainerItemProxy */;
+		};
+		B666D4C4B6E8B69AB2F306D0A2714D80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ModelMapper;
+			target = 3189A7889397089996EEB0BD7935F9A6 /* ModelMapper */;
+			targetProxy = 095741AFF3497A6DAF46871058721732 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		020FF09C1B09FAAF93900F3408B240F4 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_APP_STORE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "App Store";
+		};
+		056AC4D47A7FF3763168995CC5393B50 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2563BD45B36493E45C75C72059BBE364 /* Keychain.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Keychain/Keychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Keychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Keychain/Keychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Keychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		3590B483AEA13B7479E83C497CEF4CA5 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2563BD45B36493E45C75C72059BBE364 /* Keychain.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Keychain/Keychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Keychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Keychain/Keychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Keychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "App Store";
+		};
+		379FCC889BD092B26C1BAEE1DCAB9460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2563BD45B36493E45C75C72059BBE364 /* Keychain.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Keychain/Keychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Keychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Keychain/Keychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Keychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		37BAD3AA734C2958301CCF944A21EC4B /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 237184EA3F6D5511346DC7B0A5CFEE1B /* Pods-Thai Ko Gym Tests.app store.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Thai Ko Gym Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thai Ko Gym Tests/Pods-Thai Ko Gym Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Thai_Ko_Gym_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "App Store";
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42759AEB13E09D13A7BB94515C0B4C79 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5467ABF0E9B090413C24C5C012BE64D1 /* Pods-Thai Ko Gym Tests.staging.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Thai Ko Gym Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thai Ko Gym Tests/Pods-Thai Ko Gym Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Thai_Ko_Gym_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		4CF8C641B390DCC55B323BDD360A763A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4AFB31CBF4D717B72992122CCA15785 /* Pods-Thai Ko Gym.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Thai Ko Gym/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thai Ko Gym/Pods-Thai Ko Gym.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Thai_Ko_Gym;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		70DC1FDBC63A0D67A7A22B0A03A59ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB0B2CD4026A2665F2E2688AED2447E /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		733ACC91F317D6191364140B63A04400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EF2E100421BC40BB8EF0E8F6FCDCC5A /* Pods-Thai Ko Gym Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Thai Ko Gym Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thai Ko Gym Tests/Pods-Thai Ko Gym Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Thai_Ko_Gym_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8154C514EF0EBDEF9B66F055829BF68A /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_STAGING=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		83ABAE86EC40E9A30027E81CAC217919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB751B029272E82D65935FEAA6C456B /* Pods-Thai Ko Gym Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Thai Ko Gym Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thai Ko Gym Tests/Pods-Thai Ko Gym Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Thai_Ko_Gym_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		88D276EE9546164CB4AF41969E09B5E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A841FD1FA9AC355DC198312080E7DC5 /* ModelMapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ModelMapper/ModelMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ModelMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ModelMapper/ModelMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Mapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		988A61BB897A79B229B1AE97E09B76A3 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A841FD1FA9AC355DC198312080E7DC5 /* ModelMapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ModelMapper/ModelMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ModelMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ModelMapper/ModelMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Mapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "App Store";
+		};
+		B203F72E7329E90CA95B0EEC9F19F76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC8B1BCDC3A0FF67751F5774D22062B1 /* Pods-Thai Ko Gym.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Thai Ko Gym/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thai Ko Gym/Pods-Thai Ko Gym.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Thai_Ko_Gym;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6BBC87938AFE95B3986310C087E791E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB0B2CD4026A2665F2E2688AED2447E /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		C68D8E99C992310980DA5E953471928B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8593B168E2AA8248F7CA509BA549B7EF /* Pods-Thai Ko Gym.staging.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Thai Ko Gym/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thai Ko Gym/Pods-Thai Ko Gym.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Thai_Ko_Gym;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		D92946CFCA6A081EB0448DC0064335CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB0B2CD4026A2665F2E2688AED2447E /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD84EB2B0CB795D0BDE450BA15489FD1 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A841FD1FA9AC355DC198312080E7DC5 /* ModelMapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ModelMapper/ModelMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ModelMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ModelMapper/ModelMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Mapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		E0A7DF3ADC87B5FB013FE72BFCBA622A /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB0B2CD4026A2665F2E2688AED2447E /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "App Store";
+		};
+		E6C6B05FE6E4479642E977C3B973338C /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 503E45521290AF47BFBF458818832CAD /* Pods-Thai Ko Gym.app store.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Thai Ko Gym/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thai Ko Gym/Pods-Thai Ko Gym.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Thai_Ko_Gym;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "App Store";
+		};
+		EC2B431459539417ECBD0135244E90AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A841FD1FA9AC355DC198312080E7DC5 /* ModelMapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ModelMapper/ModelMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ModelMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ModelMapper/ModelMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Mapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FCB630005BAAA9753725BBDD63C475EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2563BD45B36493E45C75C72059BBE364 /* Keychain.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Keychain/Keychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Keychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Keychain/Keychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Keychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		074835D99F50936D0A98D0EC133695AC /* Build configuration list for PBXNativeTarget "Keychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3590B483AEA13B7479E83C497CEF4CA5 /* App Store */,
+				FCB630005BAAA9753725BBDD63C475EC /* Debug */,
+				379FCC889BD092B26C1BAEE1DCAB9460 /* Release */,
+				056AC4D47A7FF3763168995CC5393B50 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020FF09C1B09FAAF93900F3408B240F4 /* App Store */,
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+				8154C514EF0EBDEF9B66F055829BF68A /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		335868F475E242464C29D0C807267501 /* Build configuration list for PBXNativeTarget "Pods-Thai Ko Gym Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37BAD3AA734C2958301CCF944A21EC4B /* App Store */,
+				733ACC91F317D6191364140B63A04400 /* Debug */,
+				83ABAE86EC40E9A30027E81CAC217919 /* Release */,
+				42759AEB13E09D13A7BB94515C0B4C79 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B852F28F0036FA954423A7474147B00 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0A7DF3ADC87B5FB013FE72BFCBA622A /* App Store */,
+				70DC1FDBC63A0D67A7A22B0A03A59ECD /* Debug */,
+				D92946CFCA6A081EB0448DC0064335CD /* Release */,
+				B6BBC87938AFE95B3986310C087E791E /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C2B37221D8C19F33CCEB1D3F56CDC44 /* Build configuration list for PBXNativeTarget "Pods-Thai Ko Gym" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6C6B05FE6E4479642E977C3B973338C /* App Store */,
+				4CF8C641B390DCC55B323BDD360A763A /* Debug */,
+				B203F72E7329E90CA95B0EEC9F19F76F /* Release */,
+				C68D8E99C992310980DA5E953471928B /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E732521DC607DD18D10FE29B5EED70 /* Build configuration list for PBXNativeTarget "ModelMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				988A61BB897A79B229B1AE97E09B76A3 /* App Store */,
+				88D276EE9546164CB4AF41969E09B5E7 /* Debug */,
+				EC2B431459539417ECBD0135244E90AF /* Release */,
+				DD84EB2B0CB795D0BDE450BA15489FD1 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

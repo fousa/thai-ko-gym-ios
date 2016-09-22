@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045977271D924E3D000672E0 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045977261D924E3D000672E0 /* Service.swift */; };
+		045977291D924EFA000672E0 /* AuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045977281D924EFA000672E0 /* AuthenticationRequest.swift */; };
+		045D46831D9254F0006DED6A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D46821D9254F0006DED6A /* Request.swift */; };
+		045D46881D9257DE006DED6A /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D46871D9257DE006DED6A /* Authentication.swift */; };
+		045D468C1D9301C9006DED6A /* AuthenticationRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D468B1D9301C9006DED6A /* AuthenticationRequestTests.swift */; };
+		045D468F1D9303D5006DED6A /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D468E1D9303D5006DED6A /* AuthenticationTests.swift */; };
+		04C283A61D939709000C24DC /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C283A51D939709000C24DC /* Keychain.swift */; };
+		04C283AA1D939DF8000C24DC /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C283A91D939DF8000C24DC /* MembersViewController.swift */; };
+		04C283AC1D939EEF000C24DC /* MembersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C283AB1D939EEF000C24DC /* MembersViewModel.swift */; };
+		04C283AE1D939F77000C24DC /* MembersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C283AD1D939F77000C24DC /* MembersViewModelTests.swift */; };
+		080C6490B4F7F3D9B2715093 /* Pods_Thai_Ko_Gym.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F2B20A43524471BDD7EFE2 /* Pods_Thai_Ko_Gym.framework */; };
 		110DD9F30A175540EC850A9024ACD8DD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B940E1FF9C1D837FF445B68B672DC8E0 /* CoreTelephony.framework */; };
 		14925FFA345DD6940195AFC1DD4F7C56 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E21278D939C430814D81844D78AE83 /* AVFoundation.framework */; };
 		174EFDEB2310F5C4C50AC916015A9860 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DF5F6C325D67903F0E5CCEAE423537 /* SystemConfiguration.framework */; };
 		2C0B3ACF19BA13608CE821D17B095101 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2134660886BBD1DDB5D02490AEE72FDD /* CoreVideo.framework */; };
+		2CDA1D8CC147BBCAD53B4651 /* Pods_Thai_Ko_Gym_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1155967127D083D0C5C7D4FB /* Pods_Thai_Ko_Gym_Tests.framework */; };
 		393E8A7EA450C5AE33F0ED4699018F9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E341AF4AFD40E98B3DE640D4D55EE51 /* AppDelegate.swift */; };
 		51DAF45AE1E831BF0934206D1C4D5F2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF17F20439999B7CB1F99CF1792EB286 /* Assets.xcassets */; };
 		5B49DD48FD8B56B03C698C6F6AF1C332 /* Flow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4447727F1E36B9E6ED88D0022B067EF9 /* Flow.storyboard */; };
@@ -42,27 +54,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045977261D924E3D000672E0 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		045977281D924EFA000672E0 /* AuthenticationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRequest.swift; sourceTree = "<group>"; };
+		045D46821D9254F0006DED6A /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		045D46871D9257DE006DED6A /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		045D468B1D9301C9006DED6A /* AuthenticationRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRequestTests.swift; sourceTree = "<group>"; };
+		045D468E1D9303D5006DED6A /* AuthenticationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
+		04C283A51D939709000C24DC /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		04C283A81D939A87000C24DC /* Thai Ko Gym.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Thai Ko Gym.entitlements"; sourceTree = "<group>"; };
+		04C283A91D939DF8000C24DC /* MembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
+		04C283AB1D939EEF000C24DC /* MembersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewModel.swift; sourceTree = "<group>"; };
+		04C283AD1D939F77000C24DC /* MembersViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewModelTests.swift; sourceTree = "<group>"; };
 		09F0CC379980129F6B18AF0CBBD09641 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		0E341AF4AFD40E98B3DE640D4D55EE51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1155967127D083D0C5C7D4FB /* Pods_Thai_Ko_Gym_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thai_Ko_Gym_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A20B9CC17389C81EAE492CB6050702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187124990BFD8FB18DC9828F /* Pods-Thai Ko Gym Tests.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thai Ko Gym Tests.app store.xcconfig"; path = "Pods/Target Support Files/Pods-Thai Ko Gym Tests/Pods-Thai Ko Gym Tests.app store.xcconfig"; sourceTree = "<group>"; };
 		1A4A61287970E1B2ECF412516AA9862C /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		1B36A3A2ECBC9B3D68EB2515 /* Pods-Thai Ko Gym.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thai Ko Gym.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thai Ko Gym/Pods-Thai Ko Gym.debug.xcconfig"; sourceTree = "<group>"; };
 		1FD5DEDB6C107893F4330BD225424AF4 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		2134660886BBD1DDB5D02490AEE72FDD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		26F2B20A43524471BDD7EFE2 /* Pods_Thai_Ko_Gym.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thai_Ko_Gym.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E4172891D9C18CCE2A04C3F /* Pods-Thai Ko Gym Tests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thai Ko Gym Tests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-Thai Ko Gym Tests/Pods-Thai Ko Gym Tests.staging.xcconfig"; sourceTree = "<group>"; };
 		34579282FBDF123B7B3185B2D3DB5179 /* FlowNavigationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowNavigationViewModel.swift; sourceTree = "<group>"; };
 		3C292130F3AA293184C50007E5A52FFD /* FlowNavigationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowNavigationViewModelTests.swift; sourceTree = "<group>"; };
 		3F2A8FAC171B5F9B42D198A658E6C90F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		41D283EE7864B42DFCD6F42DC347D257 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuddyBuildSDK.framework; path = Vendor/BuddyBuildSDK.framework; sourceTree = "<group>"; };
 		4447727F1E36B9E6ED88D0022B067EF9 /* Flow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Flow.storyboard; sourceTree = "<group>"; };
 		4AEFB3B81DD70982C6A05E6527E581C4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		4F94FD6E918F3E59937F97C8 /* Pods-Thai Ko Gym.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thai Ko Gym.app store.xcconfig"; path = "Pods/Target Support Files/Pods-Thai Ko Gym/Pods-Thai Ko Gym.app store.xcconfig"; sourceTree = "<group>"; };
 		5695CC4291FFA7385304450246F824A1 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		65DF5F6C325D67903F0E5CCEAE423537 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		71FE66422A0CB762B9DAECD8511D1F43 /* Members.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Members.storyboard; sourceTree = "<group>"; };
 		733177493DB5B7CBEBE0867FC0655EC0 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		738181E8D723CDBC364DDF11 /* Pods-Thai Ko Gym.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thai Ko Gym.staging.xcconfig"; path = "Pods/Target Support Files/Pods-Thai Ko Gym/Pods-Thai Ko Gym.staging.xcconfig"; sourceTree = "<group>"; };
 		74E21278D939C430814D81844D78AE83 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		92A8D3FDE44D05A8C8402A1DFC0B009A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		94E0B852771D23476E858616A1B6C8B1 /* App Store.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "App Store.xcconfig"; sourceTree = "<group>"; };
 		A2985D8A3F3567D93EC86561A41848BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB14AC02C104316DB2115A42007BD804 /* FlowNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowNavigationViewController.swift; sourceTree = "<group>"; };
+		AC582038BF468A9054C0DC3E /* Pods-Thai Ko Gym Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thai Ko Gym Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thai Ko Gym Tests/Pods-Thai Ko Gym Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B940E1FF9C1D837FF445B68B672DC8E0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		DFFF5E3806EFD18C0BA3911B74A177E0 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		EFA09BE721016B780A706456AE25E3A3 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
@@ -79,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CDA1D8CC147BBCAD53B4651 /* Pods_Thai_Ko_Gym_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +127,7 @@
 				2C0B3ACF19BA13608CE821D17B095101 /* CoreVideo.framework in Frameworks */,
 				718341349230DD63259F686AD5E134E7 /* QuartzCore.framework in Frameworks */,
 				174EFDEB2310F5C4C50AC916015A9860 /* SystemConfiguration.framework in Frameworks */,
+				080C6490B4F7F3D9B2715093 /* Pods_Thai_Ko_Gym.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,10 +137,64 @@
 		01F22BC21852C2D7404C29446212C14F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3C292130F3AA293184C50007E5A52FFD /* FlowNavigationViewModelTests.swift */,
-				EFA09BE721016B780A706456AE25E3A3 /* LoginViewModelTests.swift */,
+				045D468D1D9303C6006DED6A /* Models */,
+				045D468A1D9301A5006DED6A /* Requests */,
+				045D46891D93019E006DED6A /* View Models */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		045977251D924E35000672E0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				045D46861D9257D3006DED6A /* Models */,
+				045D46841D925508006DED6A /* Requests */,
+				045D46821D9254F0006DED6A /* Request.swift */,
+				045977261D924E3D000672E0 /* Service.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		045D46841D925508006DED6A /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				045977281D924EFA000672E0 /* AuthenticationRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		045D46861D9257D3006DED6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				045D46871D9257DE006DED6A /* Authentication.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		045D46891D93019E006DED6A /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C292130F3AA293184C50007E5A52FFD /* FlowNavigationViewModelTests.swift */,
+				EFA09BE721016B780A706456AE25E3A3 /* LoginViewModelTests.swift */,
+				04C283AD1D939F77000C24DC /* MembersViewModelTests.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		045D468A1D9301A5006DED6A /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				045D468B1D9301C9006DED6A /* AuthenticationRequestTests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		045D468D1D9303C6006DED6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				045D468E1D9303D5006DED6A /* AuthenticationTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		046211EEB3845BA19886125BAB3603CA /* Thai Ko Gym */ = {
@@ -122,6 +209,14 @@
 			path = "Thai Ko Gym";
 			sourceTree = "<group>";
 		};
+		04C283A41D9396F7000C24DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04C283A51D939709000C24DC /* Keychain.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		113DF980EE44A0095C692221035F8E1C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +228,9 @@
 		2904AC0B662208041AB6BA3B80E17A8C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				04C283A41D9396F7000C24DC /* Extensions */,
 				2B9F16643D72B385A2F35BB8CC750D43 /* Layout */,
+				045977251D924E35000672E0 /* Networking */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -156,6 +253,19 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		2D8E6EEFF208D0E6BBFDFBB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B36A3A2ECBC9B3D68EB2515 /* Pods-Thai Ko Gym.debug.xcconfig */,
+				738181E8D723CDBC364DDF11 /* Pods-Thai Ko Gym.staging.xcconfig */,
+				4F94FD6E918F3E59937F97C8 /* Pods-Thai Ko Gym.app store.xcconfig */,
+				AC582038BF468A9054C0DC3E /* Pods-Thai Ko Gym Tests.debug.xcconfig */,
+				2E4172891D9C18CCE2A04C3F /* Pods-Thai Ko Gym Tests.staging.xcconfig */,
+				187124990BFD8FB18DC9828F /* Pods-Thai Ko Gym Tests.app store.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4D569E875E1DDF2C517B12166FC0663E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +278,8 @@
 				2134660886BBD1DDB5D02490AEE72FDD /* CoreVideo.framework */,
 				3F2A8FAC171B5F9B42D198A658E6C90F /* QuartzCore.framework */,
 				65DF5F6C325D67903F0E5CCEAE423537 /* SystemConfiguration.framework */,
+				26F2B20A43524471BDD7EFE2 /* Pods_Thai_Ko_Gym.framework */,
+				1155967127D083D0C5C7D4FB /* Pods_Thai_Ko_Gym_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,6 +310,7 @@
 				4DAB5C0FADA8253A948F6F22D276F5D7 /* Configuration */,
 				EFD009B22B26DF49E5032C680D24047C /* Bridging-Header.h */,
 				13A20B9CC17389C81EAE492CB6050702 /* Info.plist */,
+				04C283A81D939A87000C24DC /* Thai Ko Gym.entitlements */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				4D569E875E1DDF2C517B12166FC0663E /* Frameworks */,
+				2D8E6EEFF208D0E6BBFDFBB7 /* Pods */,
 				B4A3EB9487E4CEA24D845F5AF5E9365A /* Products */,
 				046211EEB3845BA19886125BAB3603CA /* Thai Ko Gym */,
 				6AC651D3AA2FB5B640ABEAB7538F6E90 /* Thai Ko Gym Tests */,
@@ -234,6 +348,8 @@
 			isa = PBXGroup;
 			children = (
 				71FE66422A0CB762B9DAECD8511D1F43 /* Members.storyboard */,
+				04C283A91D939DF8000C24DC /* MembersViewController.swift */,
+				04C283AB1D939EEF000C24DC /* MembersViewModel.swift */,
 			);
 			path = Members;
 			sourceTree = "<group>";
@@ -264,9 +380,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B20998BA13E8779773EED0705AFF48F9 /* Build configuration list for PBXNativeTarget "Thai Ko Gym Tests" */;
 			buildPhases = (
+				E416454AAF71558FC718B630 /* [CP] Check Pods Manifest.lock */,
 				6283A8B305FF71BF570EAA5FA6105389 /* Sources */,
 				326E87DE2012069BD3AF04ECC60BB520 /* Frameworks */,
 				D97A8A194FED214FA92B72FB01025CB1 /* Resources */,
+				883B48F4B7B294C4FEC6EC27 /* [CP] Embed Pods Frameworks */,
+				37963089EA115026FE87FD84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,9 +401,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DA102FD4AEB00F514CC63CAE161A00F /* Build configuration list for PBXNativeTarget "Thai Ko Gym" */;
 			buildPhases = (
+				11DBDC4B040F411FDA5FB0AC /* [CP] Check Pods Manifest.lock */,
 				7A9A94AE351D98F3F83F6F6F3469CEAF /* Sources */,
 				E5272DC0788C0A3E89F3E1072AE30652 /* Frameworks */,
 				E47B52DE4C82CDD1C60978561ADE2CB7 /* Resources */,
+				8325D5B99E0A7CF41FB92AA5 /* [CP] Embed Pods Frameworks */,
+				FFE605EAF562A468E92743A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,6 +437,14 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 743AM63YFU;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -359,13 +489,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11DBDC4B040F411FDA5FB0AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		37963089EA115026FE87FD84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thai Ko Gym Tests/Pods-Thai Ko Gym Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8325D5B99E0A7CF41FB92AA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thai Ko Gym/Pods-Thai Ko Gym-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		883B48F4B7B294C4FEC6EC27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thai Ko Gym Tests/Pods-Thai Ko Gym Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E416454AAF71558FC718B630 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFE605EAF562A468E92743A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thai Ko Gym/Pods-Thai Ko Gym-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6283A8B305FF71BF570EAA5FA6105389 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C283AE1D939F77000C24DC /* MembersViewModelTests.swift in Sources */,
 				7911A21AD51B43E542E0822C769B2D21 /* FlowNavigationViewModelTests.swift in Sources */,
 				C3F3AA0B83EE00218B41FAAADD3B8AB1 /* LoginViewModelTests.swift in Sources */,
+				045D468C1D9301C9006DED6A /* AuthenticationRequestTests.swift in Sources */,
+				045D468F1D9303D5006DED6A /* AuthenticationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,11 +600,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				393E8A7EA450C5AE33F0ED4699018F9C /* AppDelegate.swift in Sources */,
+				045977271D924E3D000672E0 /* Service.swift in Sources */,
+				04C283AC1D939EEF000C24DC /* MembersViewModel.swift in Sources */,
 				B1983C59AA817DE7BABA8A64BB1D8844 /* FlowNavigationViewController.swift in Sources */,
+				045D46881D9257DE006DED6A /* Authentication.swift in Sources */,
+				04C283AA1D939DF8000C24DC /* MembersViewController.swift in Sources */,
 				77CF1BE00774BB7DD09008C3F04F57AA /* FlowNavigationViewModel.swift in Sources */,
+				04C283A61D939709000C24DC /* Keychain.swift in Sources */,
 				EAF340714A654F3984E3C99E60671A5A /* KeyboardLayoutConstraint.swift in Sources */,
 				6F617CFA796153C996645450AB707551 /* LoginViewController.swift in Sources */,
 				D3EAC6E908CED99272FAF4FA7E866930 /* LoginViewModel.swift in Sources */,
+				045D46831D9254F0006DED6A /* Request.swift in Sources */,
+				045977291D924EFA000672E0 /* AuthenticationRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +640,10 @@
 /* Begin XCBuildConfiguration section */
 		0468A2CCF1A570A9A6755793526B0647 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738181E8D723CDBC364DDF11 /* Pods-Thai Ko Gym.staging.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Thai Ko Gym/Supporting Files/Thai Ko Gym.entitlements";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 743AM63YFU;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -443,6 +679,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -487,6 +724,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -521,6 +759,7 @@
 		};
 		3060D022B70202E31D4A040B945FA9CA /* App Store */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187124990BFD8FB18DC9828F /* Pods-Thai Ko Gym Tests.app store.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 743AM63YFU;
@@ -551,6 +790,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -578,6 +818,7 @@
 		};
 		53DF6334E4DE4C25822BFD29D50D1D39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC582038BF468A9054C0DC3E /* Pods-Thai Ko Gym Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 743AM63YFU;
@@ -591,7 +832,10 @@
 		};
 		BA909CF594E17516955FEBF5625D1F81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B36A3A2ECBC9B3D68EB2515 /* Pods-Thai Ko Gym.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Thai Ko Gym/Supporting Files/Thai Ko Gym.entitlements";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 743AM63YFU;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -610,6 +854,7 @@
 		};
 		DF35D08F1521DB2E9D696CCE4F70B17F /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E4172891D9C18CCE2A04C3F /* Pods-Thai Ko Gym Tests.staging.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 743AM63YFU;
@@ -623,7 +868,10 @@
 		};
 		EDD51E20D4E7866880F7ECB6DC210361 /* App Store */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F94FD6E918F3E59937F97C8 /* Pods-Thai Ko Gym.app store.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Thai Ko Gym/Supporting Files/Thai Ko Gym.entitlements";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 743AM63YFU;
 				FRAMEWORK_SEARCH_PATHS = (
