@@ -3,7 +3,10 @@ platform :ios, '9.3'
 target 'Thai Ko Gym' do
   use_frameworks!
 
-  pod 'Alamofire',   '~> 4.0'
+  pod 'Alamofire', '~> 4.0'
+  pod 'Keychain',  '~> 0.3'
+
+  # Waiting for Swift 3 version.
   pod 'ModelMapper', git: 'https://github.com/lyft/mapper.git', branch: 'swift-3.0'
 
   target 'Thai Ko Gym Tests' do
