@@ -22,6 +22,15 @@ class MembersViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout(sender:)))
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+
+        print("🚃 Start fetching members")
+        viewModel.fetchMembers { result in
+            print("🚃 Fetched members", result.objects?.count)
+        }
+    }
+
     // MARK: - Actions
 
     func logout(sender: AnyObject) {

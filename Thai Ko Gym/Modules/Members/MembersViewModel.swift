@@ -16,4 +16,24 @@ class MembersViewModel {
         Keychain.set(authenticationToken: nil)
     }
 
+    // MARK: - Fetching
+
+    func fetchMembers(completionHandler: @escaping (Result) -> ()) {
+        let request = ActiveMembersRequest()
+        Service().perform(request: request) { error, json in
+            if let _ = error {
+                completionHandler(.error("Unable to fetch the active members"))
+                return
+            }
+
+            if let json = json as? NSArray {
+                let members = Member.from(json)
+                completionHandler(.success(members))
+                return
+            }
+
+            completionHandler(.error("Incorrect data"))
+        }
+    }
+
 }
