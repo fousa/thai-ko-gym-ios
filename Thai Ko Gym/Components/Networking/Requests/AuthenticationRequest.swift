@@ -40,7 +40,7 @@ class AuthenticationRequest: Request {
 
     // MARK: - Encoding
 
-    var authorizationValue: String {
+    private var authorizationValue: String {
         let concatinatedCredentials = "\(email):\(password)"
         let data = (concatinatedCredentials as NSString).data(using: String.Encoding.utf8.rawValue)
         return data!.base64EncodedString(options: Data.Base64EncodingOptions(rawValue: 0))
