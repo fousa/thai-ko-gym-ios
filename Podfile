@@ -8,7 +8,12 @@ target 'Thai Ko Gym' do
   pod 'BSGridCollectionViewLayout', '~> 1.1'
 
   # Waiting for Swift 3 version.
-  pod 'ModelMapper', git: 'https://github.com/lyft/mapper.git', branch: 'swift-3.0'
+  pod 'Bond',        git:    'https://github.com/SwiftBond/Bond.git',
+                     branch: 'bond5',
+                     commit: 'dd80768'
+  pod 'ModelMapper', git:    'https://github.com/lyft/mapper.git',
+                     branch: 'swift-3.0',
+                     commit: 'eead7f5'
 
   target 'Thai Ko Gym Tests' do
     inherit! :search_paths

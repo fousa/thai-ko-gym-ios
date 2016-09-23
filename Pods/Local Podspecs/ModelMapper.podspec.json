@@ -1,6 +1,6 @@
 {
   "name": "ModelMapper",
-  "version": "4.0.0",
+  "version": "5.0.0-beta.2",
   "summary": "A JSON deserialization library for Swift",
   "homepage": "https://github.com/lyft/mapper",
   "license": "Apache License, Version 2.0",
@@ -15,7 +15,7 @@
   },
   "source": {
     "git": "https://github.com/lyft/mapper.git",
-    "tag": "4.0.0"
+    "tag": "5.0.0-beta.2"
   },
   "requires_arc": true,
   "source_files": "Sources/**/*.swift",
