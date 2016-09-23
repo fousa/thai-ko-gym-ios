@@ -34,5 +34,9 @@ class ActiveMembersRequestTests: XCTestCase {
         XCTAssertEqual(request.headers?.count, 1, "should return the correct header count")
         XCTAssertEqual(request.headers?["Authorization"], "Token 123", "should return the correct authorization header")
     }
+
+    func testBody() {
+        XCTAssertNil(request.body, "should return an empty body")
+    }
         
 }
