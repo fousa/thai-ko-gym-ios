@@ -7,8 +7,13 @@
 //
 
 import Keychain
+import Bond
 
 class MembersViewModel {
+
+    // MARK: - Observables
+
+    let hasSelection = Observable(false)
 
     // MARK: - Data
 
@@ -43,7 +48,7 @@ class MembersViewModel {
     // MARK: - Selection
 
     func select(items: [Int]?) {
-        
+        hasSelection.value = items?.count ?? 0 > 0
     }
 
 }

@@ -8,6 +8,7 @@
 
 import UIKit
 import BSGridCollectionViewLayout
+import Bond
 
 class MembersViewController: UIViewController {
 
@@ -26,15 +27,20 @@ class MembersViewController: UIViewController {
 
         // Setup navigation bar.
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout(sender:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(save(sender:)))
 
         // Setup collection view.
-
         let layout = GridCollectionViewLayout()
         layout.itemsPerRow = 3
         layout.itemSpacing = 2
         layout.itemHeightRatio = 3/4
         collectionView.collectionViewLayout = layout
         collectionView.allowsMultipleSelection = true
+
+        // Bindings
+        if let rightBarButtonItem = navigationItem.rightBarButtonItem {
+            viewModel.hasSelection.bind(to: rightBarButtonItem.bnd_isEnabled)
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -59,6 +65,9 @@ class MembersViewController: UIViewController {
             let _ = self.navigationController?.popToRootViewController(animated: true)
         }))
         present(controller, animated: true, completion: nil)
+    }
+
+    func save(sender: AnyObject) {
     }
 
 }
