@@ -16,6 +16,12 @@ class MembersViewController: UIViewController {
 
     fileprivate let viewModel = MembersViewModel()
 
+    // MARK: - Selections
+
+    fileprivate var selectedItems: [Int]? {
+        return collectionView.indexPathsForSelectedItems?.map { $0.item }
+    }
+
     // MARK: - Outlets
 
     @IBOutlet var collectionView: UICollectionView!
@@ -91,11 +97,11 @@ extension MembersViewController: UICollectionViewDataSource {
 extension MembersViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        viewModel.select(items: collectionView.indexPathsForSelectedItems?.map { $0.item })
+        viewModel.select(items: selectedItems)
     }
 
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        viewModel.select(items: collectionView.indexPathsForSelectedItems?.map { $0.item })
+        viewModel.select(items: selectedItems)
     }
 
 }
