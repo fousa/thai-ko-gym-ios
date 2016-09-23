@@ -34,6 +34,7 @@ class MembersViewController: UIViewController {
         layout.itemSpacing = 2
         layout.itemHeightRatio = 3/4
         collectionView.collectionViewLayout = layout
+        collectionView.allowsMultipleSelection = true
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -80,11 +81,6 @@ extension MembersViewController: UICollectionViewDataSource {
 
 extension MembersViewController: UICollectionViewDelegate {
 
-//    -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-//    {
-//    int numberOfCellInRow = 3;
-//    CGFloat cellWidth =  [[UIScreen mainScreen] bounds].size.width/numberOfCellInRow;
-//    return CGSizeMake(cellWidth, cellWidth);
-//    }
+    
 
 }
