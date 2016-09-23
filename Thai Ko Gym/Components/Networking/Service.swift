@@ -13,7 +13,7 @@ class Service {
     // MARK: - Request
 
     func perform(request: Request, completionHandler: @escaping (Error?, Any?) -> ()) {
-        Alamofire.request(request, method: request.method, parameters: nil, encoding: JSONEncoding.default, headers: request.headers)
+        Alamofire.request(request, method: request.method, parameters: request.body, encoding: JSONEncoding.default, headers: request.headers)
             .validate(statusCode: 200..<300)
             .responseJSON { response in
                 switch response.result {
