@@ -22,11 +22,11 @@ class CreatePresenceRequestTests: XCTestCase {
         "first_name": "Jake",
         "last_name": "the Snake"
     ] as NSDictionary
-    private let date = Date()
 
     private lazy var request: CreatePresenceRequest = { [unowned self] in
         let member = Member.from(self.json)!
-        return CreatePresenceRequest(member: member, date: self.date)
+        let date = Date(timeIntervalSinceReferenceDate: 60*60*24*361*10)
+        return CreatePresenceRequest(member: member, date: date)
     }()
 
     // MARK: - Tests
@@ -61,7 +61,7 @@ class CreatePresenceRequestTests: XCTestCase {
 
     func testBodyPresentAtElement() {
         let presenceBody = request.body?["presence"] as? [String: Any]
-        XCTAssertEqual(presenceBody?["present_at"] as? Date, date, "should return the correct presence date")
+        XCTAssertEqual(presenceBody?["present_at"] as? String, "2010-11-20", "should return the correct presence date")
     }
     
 }

@@ -31,7 +31,7 @@ class CreatePresenceRequest: Request {
         return [
             "presence": [
                 "user_id": member.id,
-                "present_at": date
+                "present_at": formatter.string(from: date)
             ]
         ]
     }
@@ -53,6 +53,14 @@ class CreatePresenceRequest: Request {
     private var authorizationToken: String {
         return Keychain.authenticationToken ?? ""
     }
+
+    // MARK: - Formatter
+
+    private lazy var formatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
     
 }
 
