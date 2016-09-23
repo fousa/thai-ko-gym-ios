@@ -22,6 +22,24 @@ class MemberCollectionViewCell: UICollectionViewCell {
 
     func configure(presentation: MemberPresentation) {
         nameLabel.text = presentation.name
+
+        updateState()
+    }
+
+    // MARK: - Selection
+
+    override var isSelected: Bool {
+        didSet {
+            updateState()
+        }
+    }
+
+    private func updateState() {
+        if isSelected {
+            backgroundColor = UIColor.gray
+        } else {
+            backgroundColor = UIColor.lightGray
+        }
     }
 
 }

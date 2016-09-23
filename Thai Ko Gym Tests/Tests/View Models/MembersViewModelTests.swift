@@ -25,5 +25,18 @@ class MembersViewModelTests: XCTestCase {
         XCTAssertNil(Keychain.authenticationToken, "should not be authenticated")
     }
 
+    func testInitialSelection() {
+        XCTAssertEqual(viewModel.hasSelection.value, false, "should not have selections")
+    }
+
+    func testEmptySelection() {
+        viewModel.select(items: [Int]())
+        XCTAssertEqual(viewModel.hasSelection.value, false, "should not have selections")
+    }
+
+    func testSelection() {
+        viewModel.select(items: [1, 2])
+        XCTAssertEqual(viewModel.hasSelection.value, true, "should not have selections")
+    }
     
 }

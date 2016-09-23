@@ -1,31 +1,47 @@
 PODS:
   - Alamofire (4.0.0)
+  - Bond (5.0.0-beta2):
+    - ReactiveKit (~> 3.0.0-beta1)
   - BSGridCollectionViewLayout (1.2.0)
   - Keychain (0.3.1)
-  - ModelMapper (4.0.0)
+  - ModelMapper (5.0.0-beta.2)
+  - ReactiveKit (3.0.0-beta5)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - Bond (from `https://github.com/SwiftBond/Bond.git`, commit `dd80768`, branch `bond5`)
   - BSGridCollectionViewLayout (~> 1.1)
   - Keychain (~> 0.3)
-  - ModelMapper (from `https://github.com/lyft/mapper.git`, branch `swift-3.0`)
+  - ModelMapper (from `https://github.com/lyft/mapper.git`, commit `eead7f5`, branch `swift-3.0`)
 
 EXTERNAL SOURCES:
+  Bond:
+    :branch: bond5
+    :commit: dd80768
+    :git: https://github.com/SwiftBond/Bond.git
   ModelMapper:
     :branch: swift-3.0
+    :commit: eead7f5
     :git: https://github.com/lyft/mapper.git
 
 CHECKOUT OPTIONS:
+  Bond:
+    :branch: bond5
+    :commit: dd80768
+    :git: https://github.com/SwiftBond/Bond.git
   ModelMapper:
-    :commit: 4e318ba7d0c58868b0b1e34a6b56c50bdd06afa7
+    :branch: swift-3.0
+    :commit: eead7f5
     :git: https://github.com/lyft/mapper.git
 
 SPEC CHECKSUMS:
   Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  Bond: e85195a7536d5946123f4db40d20701751b40f52
   BSGridCollectionViewLayout: 8f12c8e1e08c47057f5a39a6828f4395f043d78f
   Keychain: ef812eafcf6593fe4409b07cfecc00b95fb373ed
-  ModelMapper: 047e26a92f48e3ac16af3ac07e8e049ecc33feae
+  ModelMapper: b306e689e231331896d447a36a54643c5da0bacd
+  ReactiveKit: 23fd0e4b94758d6a36d9443fe449889ffda84a07
 
-PODFILE CHECKSUM: 43e6629200e989a192250d3044634d9aa2b7900e
+PODFILE CHECKSUM: 5368ce9a5279f6193f0105d1ef1d20110bfbc655
 
 COCOAPODS: 1.0.1
