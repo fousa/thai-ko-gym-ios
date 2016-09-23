@@ -74,6 +74,9 @@ class MembersViewController: UIViewController {
     }
 
     func save(sender: AnyObject) {
+        viewModel.save(items: selectedItems) { result in
+            print("✅ Finished saving")
+        }
     }
 
 }
