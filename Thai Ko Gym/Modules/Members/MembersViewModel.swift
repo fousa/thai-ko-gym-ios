@@ -58,23 +58,19 @@ class MembersViewModel {
 
         let selectedMembers = items.map { members[$0] }
         var success = true
+
         let group = DispatchGroup()
         DispatchQueue(label: "presences", qos: .background).async {
             for member in selectedMembers {
-                print("✅ Start saving presence for member", member.name)
-
                 group.enter()
-                let request = CreatePresenceRequest(member: member, date: Date())
-                Service().perform(request: request) { error, json in
-                    if let _ = error {
+
+                self.save(member: member, complectionHandler: { saveSuccessful in
+                    if !saveSuccessful {
                         success = false
-                        group.leave()
-                        return
                     }
 
-                    print("✅ Saved presence for member", member.name)
                     group.leave()
-                }
+                })
             }
             group.wait()
             DispatchQueue.main.async {
@@ -83,6 +79,20 @@ class MembersViewModel {
                 } else {
                     completionHandler(.error("Unable to create the member's presence"))
                 }
+            }
+        }
+    }
+
+    private func save(member: Member, complectionHandler: @escaping (Bool) -> ()) {
+        print("✅ Start saving presence for member", member.name)
+
+        let request = CreatePresenceRequest(member: member, date: Date())
+        Service().perform(request: request) { error, json in
+            if let _ = error {
+                complectionHandler(false)
+            } else {
+                print("✅ Saved presence for member", member.name)
+                complectionHandler(false)
             }
         }
     }
