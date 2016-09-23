@@ -26,6 +26,10 @@ class AuthenticationRequest: Request {
         ]
     }
 
+    var body: [String : Any]? {
+        return nil
+    }
+
     // MARK: - Stored properties
 
     private(set) var email: String

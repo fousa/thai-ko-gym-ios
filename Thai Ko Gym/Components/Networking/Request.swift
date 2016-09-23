@@ -12,6 +12,7 @@ protocol Request: URLConvertible {
     var path: String { get }
     var method: HTTPMethod { get }
     var headers: HTTPHeaders? { get }
+    var body: [String: Any]? { get }
 }
 
 extension Request {
@@ -21,5 +22,15 @@ extension Request {
 
     func asURL() throws -> URL {
         return baseURLString.appendingPathComponent(path)
+    }
+}
+
+extension Request {
+    var headers: HTTPHeaders? {
+        return nil
+    }
+
+    var body: [String : Any]? {
+        return nil
     }
 }
