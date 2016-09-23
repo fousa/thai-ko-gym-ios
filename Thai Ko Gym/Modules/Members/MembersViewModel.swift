@@ -40,4 +40,10 @@ class MembersViewModel {
         }
     }
 
+    // MARK: - Selection
+
+    func select(items: [Int]?) {
+        
+    }
+
 }

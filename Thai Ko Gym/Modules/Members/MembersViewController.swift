@@ -81,6 +81,12 @@ extension MembersViewController: UICollectionViewDataSource {
 
 extension MembersViewController: UICollectionViewDelegate {
 
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.select(items: collectionView.indexPathsForSelectedItems?.map { $0.item })
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        viewModel.select(items: collectionView.indexPathsForSelectedItems?.map { $0.item })
+    }
 
 }
