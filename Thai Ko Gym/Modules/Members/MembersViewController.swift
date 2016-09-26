@@ -49,19 +49,33 @@ class MembersViewController: UIViewController {
         if let rightBarButtonItem = navigationItem.rightBarButtonItem {
             viewModel.hasSelection.bind(to: rightBarButtonItem.bnd_isEnabled)
         }
+
+        // Pull to refresh
+        collectionView.refreshControl = UIRefreshControl()
+        collectionView.refreshControl?.addTarget(self, action: #selector(fetchMembers), for: .valueChanged)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
 
-        ProgressHUD.present(on: self.view)
+        if let refreshControl = self.collectionView.refreshControl {
+            self.collectionView.setContentOffset(CGPoint(x: 0, y: refreshControl.frame.height), animated: true)
+        }
+        fetchMembers()
+    }
+
+    // MARK: - Fetching
+
+    func fetchMembers() {
+        self.collectionView.refreshControl?.beginRefreshing()
+
         print("🚃 Start fetching members")
         viewModel.fetchMembers { result in
             print("🚃 Fetched members", result.objects?.count)
-            ProgressHUD.dismiss(on: self.view)
 
             self.viewModel.members = result.objects as? [Member]
             self.collectionView.reloadData()
+            self.collectionView.refreshControl?.endRefreshing()
         }
     }
 
