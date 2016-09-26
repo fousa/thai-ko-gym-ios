@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043D5E771D98DD9E000D5A76 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D5E761D98DD9E000D5A76 /* TextField.swift */; };
 		045977271D924E3D000672E0 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045977261D924E3D000672E0 /* Service.swift */; };
 		045977291D924EFA000672E0 /* AuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045977281D924EFA000672E0 /* AuthenticationRequest.swift */; };
 		045D46831D9254F0006DED6A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D46821D9254F0006DED6A /* Request.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043D5E761D98DD9E000D5A76 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		045977261D924E3D000672E0 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		045977281D924EFA000672E0 /* AuthenticationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRequest.swift; sourceTree = "<group>"; };
 		045D46821D9254F0006DED6A /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
@@ -161,6 +163,14 @@
 				045D46891D93019E006DED6A /* View Models */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		043D5E751D98DD8D000D5A76 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				043D5E761D98DD9E000D5A76 /* TextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		045977251D924E35000672E0 /* Networking */ = {
@@ -265,6 +275,7 @@
 				04C283A41D9396F7000C24DC /* Extensions */,
 				2B9F16643D72B385A2F35BB8CC750D43 /* Layout */,
 				045977251D924E35000672E0 /* Networking */,
+				043D5E751D98DD8D000D5A76 /* Views */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -649,6 +660,7 @@
 				04C283AA1D939DF8000C24DC /* MembersViewController.swift in Sources */,
 				04C283B41D93A360000C24DC /* ActiveMembersRequest.swift in Sources */,
 				77CF1BE00774BB7DD09008C3F04F57AA /* FlowNavigationViewModel.swift in Sources */,
+				043D5E771D98DD9E000D5A76 /* TextField.swift in Sources */,
 				04C283A61D939709000C24DC /* Keychain.swift in Sources */,
 				EAF340714A654F3984E3C99E60671A5A /* KeyboardLayoutConstraint.swift in Sources */,
 				6F617CFA796153C996645450AB707551 /* LoginViewController.swift in Sources */,

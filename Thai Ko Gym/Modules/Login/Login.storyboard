@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zsa-WE-2ES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zsa-WE-2ES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -16,35 +16,59 @@
                         <viewControllerLayoutGuide type="bottom" id="VwT-Ae-icQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cxo-TL-aEx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMe-xH-jLW">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIj-Xk-WTm">
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6PK-KJ-eb7">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6PK-KJ-eb7" customClass="TextField" customModule="Thai_Ko_Gym" customModuleProvider="target">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="240" id="2TD-5A-jUY"/>
+                                                    <constraint firstAttribute="height" constant="30" id="LDm-EB-Pz9"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <color key="textColor" red="0.21021395919999999" green="0.25392472739999999" blue="0.31214520340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.1939987242" green="0.77296185490000002" blue="0.82480877640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Zsa-WE-2ES" id="vAA-MW-t2N"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WAP-FS-ywM">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WAP-FS-ywM" customClass="TextField" customModule="Thai_Ko_Gym" customModuleProvider="target">
                                                 <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="5q7-kR-Bp4"/>
                                                     <constraint firstAttribute="width" constant="240" id="NsE-b1-3MF"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <color key="textColor" red="0.21021395919999999" green="0.25392472739999999" blue="0.31214520340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.1939987242" green="0.77296185490000002" blue="0.82480877640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Zsa-WE-2ES" id="oYt-a8-RXU"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="WAP-FS-ywM" secondAttribute="bottom" id="0Vn-63-DmF"/>
                                             <constraint firstItem="6PK-KJ-eb7" firstAttribute="leading" secondItem="MIj-Xk-WTm" secondAttribute="leading" id="15T-RE-YZ0"/>
-                                            <constraint firstItem="WAP-FS-ywM" firstAttribute="top" secondItem="6PK-KJ-eb7" secondAttribute="bottom" constant="10" id="Rp8-tj-SUp"/>
+                                            <constraint firstItem="WAP-FS-ywM" firstAttribute="top" secondItem="6PK-KJ-eb7" secondAttribute="bottom" constant="20" id="Rp8-tj-SUp"/>
                                             <constraint firstAttribute="trailing" secondItem="6PK-KJ-eb7" secondAttribute="trailing" id="VkA-Lq-4a9"/>
                                             <constraint firstAttribute="trailing" secondItem="WAP-FS-ywM" secondAttribute="trailing" id="c3D-oC-P1O"/>
                                             <constraint firstItem="6PK-KJ-eb7" firstAttribute="top" secondItem="MIj-Xk-WTm" secondAttribute="top" id="ln5-pA-Rbe"/>
@@ -52,7 +76,10 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vl3-kn-n3n">
-                                        <state key="normal" title="authenticate"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <state key="normal" title="authenticate">
+                                            <color key="titleColor" red="0.1939987242" green="0.77296185490000002" blue="0.82480877640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="authenticateWithSender:" destination="Zsa-WE-2ES" eventType="touchUpInside" id="B95-MQ-FdD"/>
                                         </connections>
@@ -60,7 +87,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="vl3-kn-n3n" firstAttribute="top" secondItem="MIj-Xk-WTm" secondAttribute="bottom" constant="8" id="JXV-9T-fCG"/>
+                                    <constraint firstItem="vl3-kn-n3n" firstAttribute="top" secondItem="MIj-Xk-WTm" secondAttribute="bottom" constant="20" id="JXV-9T-fCG"/>
                                     <constraint firstItem="MIj-Xk-WTm" firstAttribute="centerY" secondItem="TMe-xH-jLW" secondAttribute="centerY" id="TGM-gz-dd2"/>
                                     <constraint firstItem="MIj-Xk-WTm" firstAttribute="centerX" secondItem="TMe-xH-jLW" secondAttribute="centerX" id="aTR-ai-Xxx"/>
                                     <constraint firstItem="vl3-kn-n3n" firstAttribute="centerX" secondItem="TMe-xH-jLW" secondAttribute="centerX" id="ywq-4I-wAV"/>
@@ -75,6 +102,7 @@
                             <constraint firstItem="TMe-xH-jLW" firstAttribute="leading" secondItem="Cxo-TL-aEx" secondAttribute="leadingMargin" id="yXC-7n-OFM"/>
                         </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="emailField" destination="6PK-KJ-eb7" id="Q4A-94-x8y"/>
                         <outlet property="passwordField" destination="WAP-FS-ywM" id="RPS-KC-o9e"/>

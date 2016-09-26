@@ -24,6 +24,14 @@ class LoginViewController: UIViewController {
     var flowNavigationController: FlowNavigationViewController? {
         return self.navigationController as? FlowNavigationViewController
     }
+
+    // MARK: - View flow
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        title = viewModel.title
+    }
     
     // MARK: - Actions
     
@@ -39,4 +47,13 @@ class LoginViewController: UIViewController {
         }
     }
     
+}
+
+extension LoginViewController: UITextFieldDelegate {
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        authenticate(sender: textField)
+        return true
+    }
+
 }

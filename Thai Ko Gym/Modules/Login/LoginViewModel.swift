@@ -25,6 +25,12 @@ enum LoginResult {
 }
 
 class LoginViewModel {
+
+    // MARK: - Localizations
+
+    var title: String {
+        return "Thai Ko Gym"
+    }
     
     // MARK: - Authenticate
     
