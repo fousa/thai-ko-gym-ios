@@ -98,6 +98,14 @@ class MembersViewController: UIViewController {
             ProgressHUD.dismiss(on: self.view)
 
             print("✅ Finished saving")
+
+            let controller = UIAlertController(title: "Presences", message: "All the presences are registered online.", preferredStyle: .alert)
+            controller.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { action in
+                for indexPath in self.collectionView.indexPathsForSelectedItems ?? [IndexPath]() {
+                    self.collectionView.deselectItem(at: indexPath, animated: true)
+                }
+            }))
+            self.present(controller, animated: true, completion: nil)
         }
     }
 
