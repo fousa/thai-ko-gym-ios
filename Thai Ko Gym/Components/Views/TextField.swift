@@ -15,13 +15,13 @@ class TextField: UITextField {
 
     @IBInspectable var borderWidth: CGFloat = 1.0 {
         didSet {
-            setNeedsLayout()
+            setNeedsDisplay()
         }
     }
 
     @IBInspectable var borderColor: UIColor = .red {
         didSet {
-            setNeedsLayout()
+            setNeedsDisplay()
         }
     }
 

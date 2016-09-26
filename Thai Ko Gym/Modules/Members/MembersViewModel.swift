@@ -11,6 +11,12 @@ import Bond
 
 class MembersViewModel {
 
+    // MARK: - Localizations
+
+    var title: String {
+        return "Today"
+    }
+
     // MARK: - Observables
 
     let hasSelection = Observable(false)
@@ -95,6 +101,12 @@ class MembersViewModel {
                 complectionHandler(false)
             }
         }
+    }
+
+    // MARK: - Rows
+
+    func numberOfItemsPerRow(for traitCollection: UITraitCollection) -> Int {
+        return traitCollection.horizontalSizeClass == .compact ? 3 : 5
     }
 
     // MARK: - Selection

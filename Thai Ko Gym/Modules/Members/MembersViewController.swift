@@ -31,14 +31,16 @@ class MembersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = viewModel.title
+
         // Setup navigation bar.
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout(sender:)))
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(save(sender:)))
 
         // Setup collection view.
         let layout = GridCollectionViewLayout()
-        layout.itemsPerRow = 3
-        layout.itemSpacing = 2
+        layout.itemsPerRow = viewModel.numberOfItemsPerRow(for: traitCollection)
+        layout.itemSpacing = 4
         layout.itemHeightRatio = 3/4
         collectionView.collectionViewLayout = layout
         collectionView.allowsMultipleSelection = true
@@ -76,6 +78,16 @@ class MembersViewController: UIViewController {
     func save(sender: AnyObject) {
         viewModel.save(items: selectedItems) { result in
             print("✅ Finished saving")
+        }
+    }
+
+    // MARK: - Rotation
+
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.willTransition(to: traitCollection, with: coordinator)
+
+        if let layout = self.collectionView.collectionViewLayout as? GridCollectionViewLayout {
+            layout.itemsPerRow = self.viewModel.numberOfItemsPerRow(for: newCollection)
         }
     }
 
