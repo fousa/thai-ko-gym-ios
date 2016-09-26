@@ -6,6 +6,7 @@ target 'Thai Ko Gym' do
   pod 'Alamofire',                  '~> 4.0'
   pod 'Keychain',                   '~> 0.3'
   pod 'BSGridCollectionViewLayout', '~> 1.1'
+  pod 'MBProgressHUD',              '~> 1.0'
 
   # Waiting for Swift 3 version.
   pod 'Bond',        git:    'https://github.com/SwiftBond/Bond.git',

@@ -4,6 +4,7 @@ PODS:
     - ReactiveKit (~> 3.0.0-beta1)
   - BSGridCollectionViewLayout (1.2.0)
   - Keychain (0.3.1)
+  - MBProgressHUD (1.0.0)
   - ModelMapper (5.0.0-beta.2)
   - ReactiveKit (3.0.0-beta5)
 
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - Bond (from `https://github.com/SwiftBond/Bond.git`, commit `dd80768`, branch `bond5`)
   - BSGridCollectionViewLayout (~> 1.1)
   - Keychain (~> 0.3)
+  - MBProgressHUD (~> 1.0)
   - ModelMapper (from `https://github.com/lyft/mapper.git`, commit `eead7f5`, branch `swift-3.0`)
 
 EXTERNAL SOURCES:
@@ -39,9 +41,10 @@ SPEC CHECKSUMS:
   Bond: e85195a7536d5946123f4db40d20701751b40f52
   BSGridCollectionViewLayout: 8f12c8e1e08c47057f5a39a6828f4395f043d78f
   Keychain: ef812eafcf6593fe4409b07cfecc00b95fb373ed
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   ModelMapper: b306e689e231331896d447a36a54643c5da0bacd
   ReactiveKit: 23fd0e4b94758d6a36d9443fe449889ffda84a07
 
-PODFILE CHECKSUM: 5368ce9a5279f6193f0105d1ef1d20110bfbc655
+PODFILE CHECKSUM: c3342c4711b2d8c1b6fbd60200b2633e98d54dfe
 
 COCOAPODS: 1.0.1

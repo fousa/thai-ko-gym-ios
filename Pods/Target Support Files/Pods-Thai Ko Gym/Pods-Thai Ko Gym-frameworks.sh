@@ -88,6 +88,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/BSGridCollectionViewLayout/BSGridCollectionViewLayout.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Bond/Bond.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Keychain/Keychain.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MBProgressHUD/MBProgressHUD.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ModelMapper/Mapper.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveKit/ReactiveKit.framework"
 fi
@@ -96,6 +97,7 @@ if [[ "$CONFIGURATION" == "Staging" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/BSGridCollectionViewLayout/BSGridCollectionViewLayout.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Bond/Bond.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Keychain/Keychain.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MBProgressHUD/MBProgressHUD.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ModelMapper/Mapper.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveKit/ReactiveKit.framework"
 fi
@@ -104,6 +106,7 @@ if [[ "$CONFIGURATION" == "App Store" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/BSGridCollectionViewLayout/BSGridCollectionViewLayout.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Bond/Bond.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Keychain/Keychain.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MBProgressHUD/MBProgressHUD.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ModelMapper/Mapper.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveKit/ReactiveKit.framework"
 fi
