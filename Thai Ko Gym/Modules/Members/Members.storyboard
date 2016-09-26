@@ -65,17 +65,34 @@
                                     <outlet property="delegate" destination="Ypd-m2-6Yf" id="xLZ-pC-rnT"/>
                                 </connections>
                             </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aST-4q-ldP">
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mhP-b1-Uta"/>
+                                    <barButtonItem style="plain" systemItem="save" id="MqH-do-XF8">
+                                        <color key="tintColor" red="0.1939987242" green="0.77296185490000002" blue="0.82480877640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="saveWithSender:" destination="Ypd-m2-6Yf" id="evG-BM-mgS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.86581790449999996" green="0.88967126610000002" blue="0.92705333229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YeJ-pd-4IX" firstAttribute="top" secondItem="ydX-FL-K6n" secondAttribute="bottom" id="8xw-5W-G4b"/>
                             <constraint firstAttribute="trailing" secondItem="ydX-FL-K6n" secondAttribute="trailing" id="9lb-XH-h2R"/>
+                            <constraint firstItem="YeJ-pd-4IX" firstAttribute="top" secondItem="aST-4q-ldP" secondAttribute="bottom" priority="750" id="ViS-Dc-gCD"/>
                             <constraint firstItem="ydX-FL-K6n" firstAttribute="top" secondItem="R9o-Sz-qKg" secondAttribute="bottom" id="bek-O4-hZO"/>
+                            <constraint firstItem="aST-4q-ldP" firstAttribute="leading" secondItem="OOu-pB-MJf" secondAttribute="leading" id="cpN-c7-T7V"/>
+                            <constraint firstAttribute="trailing" secondItem="aST-4q-ldP" secondAttribute="trailing" id="g4B-M8-Xj2"/>
+                            <constraint firstItem="aST-4q-ldP" firstAttribute="top" secondItem="ydX-FL-K6n" secondAttribute="bottom" id="gpU-IL-sWW"/>
                             <constraint firstItem="ydX-FL-K6n" firstAttribute="leading" secondItem="OOu-pB-MJf" secondAttribute="leading" id="lMm-ei-jbN"/>
+                            <constraint firstItem="YeJ-pd-4IX" firstAttribute="top" secondItem="ydX-FL-K6n" secondAttribute="bottom" priority="700" id="vZC-Gw-mTn"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="ydX-FL-K6n" id="iyA-fu-OKi"/>
+                        <outlet property="toolbarBottomConstraint" destination="ViS-Dc-gCD" id="Kfs-uk-WhL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUE-wj-deL" userLabel="First Responder" sceneMemberID="firstResponder"/>

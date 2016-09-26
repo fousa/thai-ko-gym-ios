@@ -25,6 +25,7 @@ class MembersViewController: UIViewController {
     // MARK: - Outlets
 
     @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var toolbarBottomConstraint: NSLayoutConstraint!
 
     // MARK: - View flow
 
@@ -35,7 +36,6 @@ class MembersViewController: UIViewController {
 
         // Setup navigation bar.
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout(sender:)))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(save(sender:)))
 
         // Setup collection view.
         let layout = GridCollectionViewLayout()
@@ -46,9 +46,9 @@ class MembersViewController: UIViewController {
         collectionView.allowsMultipleSelection = true
 
         // Bindings
-        if let rightBarButtonItem = navigationItem.rightBarButtonItem {
-            viewModel.hasSelection.bind(to: rightBarButtonItem.bnd_isEnabled)
-        }
+        viewModel.hasSelection.observeNext(with: { hasSelection in
+            self.toolbarIsHidden = !hasSelection
+        }).disposeIn(bnd_bag)
 
         // Pull to refresh
         collectionView.refreshControl = UIRefreshControl()
@@ -76,6 +76,7 @@ class MembersViewController: UIViewController {
             self.viewModel.members = result.objects as? [Member]
             self.collectionView.reloadData()
             self.collectionView.refreshControl?.endRefreshing()
+            self.toolbarIsHidden = true
         }
     }
 
@@ -91,20 +92,20 @@ class MembersViewController: UIViewController {
         present(controller, animated: true, completion: nil)
     }
 
-    func save(sender: AnyObject) {
+    @IBAction func save(sender: AnyObject) {
         ProgressHUD.present(on: view)
 
         viewModel.save(items: selectedItems) { result in
             ProgressHUD.dismiss(on: self.view)
 
             print("✅ Finished saving")
+            for indexPath in self.collectionView.indexPathsForSelectedItems ?? [IndexPath]() {
+                self.collectionView.deselectItem(at: indexPath, animated: true)
+            }
+            self.toolbarIsHidden = true
 
             let controller = UIAlertController(title: "Presences", message: "All the presences are registered online.", preferredStyle: .alert)
-            controller.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { action in
-                for indexPath in self.collectionView.indexPathsForSelectedItems ?? [IndexPath]() {
-                    self.collectionView.deselectItem(at: indexPath, animated: true)
-                }
-            }))
+            controller.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
             self.present(controller, animated: true, completion: nil)
         }
     }
@@ -116,6 +117,17 @@ class MembersViewController: UIViewController {
 
         if let layout = self.collectionView.collectionViewLayout as? GridCollectionViewLayout {
             layout.itemsPerRow = self.viewModel.numberOfItemsPerRow(for: newCollection)
+        }
+    }
+
+    // MARK: - Toolbar
+
+    fileprivate var toolbarIsHidden: Bool = true {
+        didSet {
+            toolbarBottomConstraint.priority = toolbarIsHidden ? UILayoutPriorityDefaultLow : UILayoutPriorityDefaultHigh
+            UIView.animate(withDuration: 0.35) { 
+                self.view.layoutIfNeeded()
+            }
         }
     }
 
