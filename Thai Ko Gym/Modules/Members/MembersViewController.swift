@@ -54,9 +54,11 @@ class MembersViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
 
+        ProgressHUD.present(on: self.view)
         print("🚃 Start fetching members")
         viewModel.fetchMembers { result in
             print("🚃 Fetched members", result.objects?.count)
+            ProgressHUD.dismiss(on: self.view)
 
             self.viewModel.members = result.objects as? [Member]
             self.collectionView.reloadData()
@@ -76,7 +78,11 @@ class MembersViewController: UIViewController {
     }
 
     func save(sender: AnyObject) {
+        ProgressHUD.present(on: view)
+
         viewModel.save(items: selectedItems) { result in
+            ProgressHUD.dismiss(on: self.view)
+
             print("✅ Finished saving")
         }
     }

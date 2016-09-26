@@ -37,7 +37,11 @@ class LoginViewController: UIViewController {
     
     @IBAction func authenticate(sender: AnyObject) {
         print("🐜", "Start authenticating")
+        ProgressHUD.present(on: view)
+
         viewModel.authenticate(email: emailField.text, password: passwordField.text) { result in
+            ProgressHUD.dismiss(on: self.view)
+
             guard result.succeeded else {
                 return
             }
