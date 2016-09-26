@@ -92,6 +92,20 @@ class MembersViewController: UIViewController {
         present(controller, animated: true, completion: nil)
     }
 
+    @IBAction func clearSelection(sender: AnyObject) {
+        print("🎯 Clearing selection")
+
+        let controller = UIAlertController(title: "Clear selection", message: "Are you sure you want to clear the current selection? This can not be undone.", preferredStyle: .alert)
+        controller.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        controller.addAction(UIAlertAction(title: "Clear", style: .destructive, handler: { action in
+            for indexPath in self.collectionView.indexPathsForSelectedItems ?? [IndexPath]() {
+                self.collectionView.deselectItem(at: indexPath, animated: true)
+            }
+            self.toolbarIsHidden = true
+        }))
+        present(controller, animated: true, completion: nil)
+    }
+
     @IBAction func save(sender: AnyObject) {
         ProgressHUD.present(on: view)
 
