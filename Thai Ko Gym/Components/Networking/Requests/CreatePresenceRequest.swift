@@ -59,6 +59,7 @@ class CreatePresenceRequest: Request {
     private lazy var formatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
+        formatter.timeZone = TimeZone(abbreviation: "CET")
         return formatter
     }()
     
