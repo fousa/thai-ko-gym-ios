@@ -17,6 +17,10 @@ class MembersViewModel {
         return "Today"
     }
 
+    var searchPlaceholder: String {
+        return "Type to search"
+    }
+
     // MARK: - Observables
 
     let hasSelection = Observable(false)

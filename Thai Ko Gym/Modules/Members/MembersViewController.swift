@@ -24,8 +24,12 @@ class MembersViewController: UIViewController {
 
     // MARK: - Outlets
 
-    @IBOutlet var collectionView: UICollectionView!
-    @IBOutlet var toolbarBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var toolbarBottomConstraint: NSLayoutConstraint!
+
+    // MARK: - Search
+
+    private var searchController: UISearchController!
 
     // MARK: - View flow
 
@@ -53,6 +57,21 @@ class MembersViewController: UIViewController {
         // Pull to refresh
         collectionView.refreshControl = UIRefreshControl()
         collectionView.refreshControl?.addTarget(self, action: #selector(fetchMembers), for: .valueChanged)
+
+        // Setup searchController
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.sizeToFit()
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.searchBarStyle = .prominent
+        searchController.searchBar.placeholder = viewModel.searchPlaceholder
+        if let field = searchController.searchBar.value(forKey:"searchField") as? UITextField {
+            field.backgroundColor = UIColor(red:0.88, green:0.90, blue:0.93, alpha:1.00)
+            field.textColor = UIColor(red:0.21, green:0.25, blue:0.31, alpha:1.00)
+            field.tintColor = UIColor(red:0.24, green:0.77, blue:0.82, alpha:1.00)
+        }
+        navigationItem.titleView = searchController.searchBar
+        searchController.hidesNavigationBarDuringPresentation = false
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -67,7 +86,8 @@ class MembersViewController: UIViewController {
     // MARK: - Fetching
 
     func fetchMembers() {
-        self.collectionView.refreshControl?.beginRefreshing()
+        searchController.isActive = false
+        collectionView.refreshControl?.beginRefreshing()
 
         print("🚃 Start fetching members")
         viewModel.fetchMembers { result in
@@ -171,6 +191,14 @@ extension MembersViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         viewModel.select(items: selectedItems)
+    }
+
+}
+
+extension MembersViewController: UISearchResultsUpdating {
+
+    func updateSearchResults(for searchController: UISearchController) {
+
     }
 
 }
